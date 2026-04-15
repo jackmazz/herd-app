@@ -1,0 +1,219 @@
+.commentSubmitBtn {
+    background: #f08a24;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Comment Component Styles */
+.commentComponentWrapper {
+    margin-bottom: 12px;
+}
+
+.commentRepliesList {
+    margin-left: 40px; /* This provides the indentation for replies */
+    border-left: 2px solid #eee;
+    padding-left: 10px;
+    margin-top: 8px;
+}
+
+.commentComponent {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.commentAvatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.commentContentWrapper {
+    flex: 1;
+    min-width: 0;
+}
+
+.commentHeader {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 2px;
+}
+
+.commentScreenname {
+    font-weight: 700;
+    font-size: 14px;
+    color: #111;
+}
+
+.commentUsername {
+    font-size: 13px;
+    color: #666;
+}
+
+.commentBody {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.commentAttachmentImage {
+    display: block;
+    max-width: 100%;
+    max-height: 132px;
+    margin-top: 8px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: #f0f0f0;
+}
+
+.commentActions {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.commentActionBtn {
+    background: none;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: #666;
+    padding: 0;
+    cursor: pointer;
+}
+
+.commentActionBtn:hover {
+    text-decoration: underline;
+}
+
+.commentMenuWrapper .commentActionBtn {
+    font-size: 16px;
+    line-height: 1;
+    padding: 2px 6px;
+}
+
+.commentMenuWrapper .commentActionBtn:hover {
+    text-decoration: none;
+}
+
+.commentRepliesList {
+    margin-left: 48px;
+    padding-left: 12px;
+}
+
+.replyingToLabel {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cancelReplyBtn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.cancelReplyBtn:hover {
+    color: #333;
+}
+
+.commentMenuWrapper {
+    position: relative;
+}
+
+.commentOptionsMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 50;
+    padding: 4px 0;
+    min-width: 140px;
+    overflow: hidden;
+}
+
+.commentDeleteBtn {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    padding: 6px 16px;
+    font-size: 13px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.commentDeleteBtn:hover {
+    background: #f5f5f5;
+}
+
+@media (max-width: 767px) {
+    .commentComponentWrapper {
+        margin-bottom: 14px;
+    }
+
+    .commentComponent {
+        gap: 10px;
+        padding: 12px 0;
+    }
+
+    .commentAvatar {
+        width: 38px;
+        height: 38px;
+    }
+
+    .commentScreenname {
+        font-size: 15px;
+    }
+
+    .commentUsername {
+        font-size: 13px;
+    }
+
+    .commentBody {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .commentHeader {
+        flex-wrap: wrap;
+        row-gap: 2px;
+    }
+
+    .commentActions {
+        margin-top: 8px;
+        gap: 14px;
+    }
+
+    .commentActionBtn {
+        font-size: 13px;
+        padding: 4px 0;
+    }
+
+    /* Less horizontal bite than desktop so body text has more width */
+    .commentRepliesList {
+        margin-left: 12px;
+        padding-left: 12px;
+        border-left-width: 2px;
+    }
+
+    .commentAttachmentImage {
+        max-height: 200px;
+        margin-top: 10px;
+    }
+}

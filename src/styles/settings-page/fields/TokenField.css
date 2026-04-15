@@ -1,0 +1,94 @@
+.token-field {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    /* size */
+    width: 100%;
+}
+
+.token-field__label {
+    /* size */
+    margin: 0px 15px 10px 15px;
+    
+    /* color */
+    color: #717171;
+    
+    /* font */
+    font-size: 20px;
+}
+
+.token-field__message {
+    /* size */
+    min-height: 15px;
+    margin: 5px 15px 0px 15px;
+    
+    /* color */
+    color: #F64E4E;
+    
+    /* font */
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.token-field__input-container {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+    
+    /* border */
+    box-shadow: inset 0px 2px 3px #0005;
+    border-radius: 15px;
+
+    /* color */
+    background: #FFF;
+}
+
+.token-field__input {
+    /* size */
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    
+    /* border */
+    border-radius: 15px;
+
+    /* color */
+    color: #717171;
+    
+    /* font */
+    font-size: 16px;
+
+} .token-field__input::placeholder {
+    /* color */
+    color: #B2B2B2;
+}
+
+.token-field__resend-button {
+    /* size */
+    padding: 10px 15px 10px 15px;
+    
+    /* color */
+    color: #F7B17F;
+    
+     /* font */
+    font-size: 15px;
+    font-weight: bold;
+    
+    /* select */
+    cursor: pointer;
+
+}  @media (hover: hover) {
+    .token-field__resend-button:hover {
+        /* color */
+        color: #FF8D00;
+    }
+}
+

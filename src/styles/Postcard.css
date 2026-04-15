@@ -1,0 +1,1482 @@
+.postCard {
+  font-family: Oxanium, sans-serif;
+  background: #e9e9e9;
+  border-radius: 14px;
+  padding: 18px 18px;
+  margin-bottom: 14px;
+  transition: box-shadow 0.2s ease, transform 0.08s ease;
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  column-gap: 14px;
+  align-items: start;
+}
+
+/* Direct grid children only — keeps comments full width through col 2–3 (past the ••• gutter) */
+.postCard > .postCardAvatarLink {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+}
+
+.postCard > .postCardMain {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.postCard > .postCardMenu {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+}
+
+.postCard > .postCardCommentsSection {
+  grid-column: 2 / -1;
+  grid-row: 2;
+  min-width: 0;
+}
+
+.postCard:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.postCardAvatarLink {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.postCardAvatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #cfcfcf;
+}
+
+.postCardAttachment {
+  max-width: 100%;
+  max-height: 300px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 10px;
+}
+
+.postCardAttachment__video {
+  max-width: 100%;
+  height: auto;
+  max-height: 700px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 10px;
+}
+
+.postCardMain {
+  min-width: 0;
+}
+
+.postCardTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.postCardIdentity {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+}
+
+.postCardNameLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Only used on mobile — hidden on desktop */
+.postCardNameRow {
+  display: contents;
+}
+
+.postCardName {
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.05;
+  color: #111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.postCardUsername {
+  font-size: 18px;
+  color: #555;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.postCardCommunityTag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  background: #1D3557;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.postCardFollowBtn {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-left: auto;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #f08a24;
+  color: #fff;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.postCardFollowBtn:hover {
+  background: #c0392b;
+  transform: translateY(-1px);
+}
+
+.postCardFollowBtn.following {
+  background: transparent;
+  color: #f08a24;
+  box-shadow: inset 0 0 0 2px #f08a24;
+}
+
+.postCardFollowBtn.following:hover {
+  background: #fdecea;
+  color: #c0392b;
+  box-shadow: inset 0 0 0 2px #c0392b;
+}
+
+.postCardBody {
+  margin-top: 10px;
+}
+
+.postCardFooter {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.postCardFooterIcon,
+.postCardLikeIcon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  filter: grayscale(1) brightness(0.6);
+  transition: transform 0.1s ease, filter 0.15s ease;
+}
+
+.postCardCommentBtn,
+.postCardLikeIconBtn {
+  border: none;
+  background: transparent;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, transform 0.08s ease;
+}
+
+.postCardLikeIconBtn:hover .postCardLikeIcon {
+  transform: scale(1.1);
+  filter: none;
+}
+
+.postCardLikeIconBtn.liked .postCardLikeIcon {
+  filter: none;
+}
+
+.postCardLikeCount {
+  font-size: 14px;
+  color: #333;
+}
+
+.postCardTitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.postCardContent {
+  font-size: 20px;
+  color: #111;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.postCardFooter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.postCardLikeIconBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #666;
+  border-radius: 8px;
+  transition: color 0.15s ease, transform 0.1s ease;
+}
+
+.postCardLikeIconBtn:hover:not(:disabled) {
+  color: #e63946;
+  transform: scale(1.06);
+}
+
+.postCardLikeIconBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.postCardLikeIconBtn.liked {
+  color: #e63946;
+}
+
+.postCardHeartSvg {
+  display: block;
+}
+
+.postCardLikeCount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  min-width: 1ch;
+}
+
+.postCardMenu {
+  position: relative;
+}
+
+.postCardMenuBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+  color: #666;
+  padding: 6px 8px;
+  border-radius: 10px;
+  
+} .postCardMenuBtn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.postCardMenuPanel {
+  box-sizing: border-box;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  left: auto;
+  transform: none;
+  min-width: 120px;
+  max-width: min(220px, calc(100vw - 24px));
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 250;
+}
+
+.postCardMenuOption {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  
+} .postCardMenuOption:hover {
+  background: #f2f2f2;
+}
+
+/* Comments Section (grid-column set on .postCard > .postCardCommentsSection) */
+.postCardCommentsSection {
+  margin-top: 16px;
+  margin-right: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.noCommentsText {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.commentInputArea {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 12px;
+  align-items: flex-start;
+}
+
+.commentInputBodyRow {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.commentInputAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.commentInputWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.commentTextareaShell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.commentTextareaShell:focus-within {
+  border-color: #999;
+  box-shadow: 0 0 0 1px rgba(240, 138, 36, 0.25);
+}
+
+.commentTextarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  min-height: 44px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 8px 8px;
+  min-width: 0;
+  resize: none;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.commentTextarea:focus {
+  outline: none;
+}
+
+.commentPhotoFileInput {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.commentPhotoPreviewRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.commentPhotoPreviewThumb {
+  max-height: 72px;
+  max-width: 120px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.commentPhotoRemoveBtn {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background: #ddd;
+  color: #333;
+  cursor: pointer;
+}
+
+.commentPhotoRemoveBtn:hover {
+  background: #ccc;
+}
+
+.commentInputFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.commentInputFooter .charCount {
+  margin-left: auto;
+}
+
+.commentTextareaToolbar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 8px;
+  border-top: 1px solid #e8e8e8;
+  background: #f7f7f7;
+}
+
+.commentTextareaToolbar .commentSubmitBtn {
+  border: none;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  height: 18px;
+  line-height: 1.2;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.commentAddPhotoBtn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.commentAddPhotoBtn:hover:not(:disabled) {
+  background: #f0f0f0;
+  border-color: #aaa;
+}
+
+.commentAddPhotoBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.commentAddPhotoBtnIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  opacity: 0.72;
+}
+
+.commentAddPhotoBtn:hover:not(:disabled) .commentAddPhotoBtnIcon {
+  opacity: 0.95;
+}
+
+.commentSubmitBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.commentErrorText {
+  color: #d32f2f;
+}
+
+.charCount.limit {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.commentSubmitBtn {
+  background: #f08a24;
+  color: #fff;
+  min-height: 18px;
+  padding: 6px 14px;
+  margin-right: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.commentSubmitBtn:hover:not(:disabled) {
+  background: #e07d1f;
+}
+
+.pollPanel {
+  bottom: 76px;
+  left: 32px;
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  max-height: 800px;
+  background: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.pollQuestion {
+  font-size: 16px;
+  color: #111;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.12s;
+  /* overflow-y: auto; */
+}
+
+.pollHeader {
+  padding: 12px 16px 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+  border-bottom: 1px solid #f0f0f0;
+  flex-shrink: 0;
+}
+
+.pollList {
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  max-height: calc(10 * 41px); /* 41px per item × 10 */
+  overflow-y: auto;
+  /* word-break: break-all; */
+  word-wrap: break-word;
+  flex: 1;
+}
+
+.pollItem, .pollItemClicked, .votedPollItem, .pollItemVotedFor, .pollItemsWhenVoted {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.12s;
+  margin: 5px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.pollItem:hover {
+  background: #d9d9d9;
+}
+
+.pollItemClicked {
+  background: #1D3557;
+  color: white;
+  /* outline: #f08a24 auto 5px;  */
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+.votedPollItem {
+  background: rgba(29, 53, 87, 0.5);
+  opacity: 50%;
+}
+
+.pollItemVotedFor {
+  background: rgba(29, 53, 87, 0.2);
+}
+
+.votedText {
+  position:relative;
+  width: 400px;
+}
+
+.votedPercentage {
+  position: relative;
+  margin-left: 8px;
+  max-width: 90px;
+  overflow-wrap: normal;
+  z-index: 100;
+}
+
+.voteBtnWrapper {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.voteBtn, .removeVoteBtn {
+  float: right;
+  bottom: 24px;
+  left: 32px;
+  background-color: #f08a24;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+
+.voteBtn:hover {
+  background: #d97a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.voteBtn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.removeVoteBtn {
+  background: rgba(0,0,0,0.08);
+  color: #111;
+}
+
+.removeVoteBtn:hover {
+  background: rgba(0,0,0,0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+.postOptionsMenu {
+  position: absolute;
+  top: 100%;
+  left: -72px;
+  right: 0px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+  padding: 4px 0;
+}
+
+.hidePostBtn, .postDeleteBtn {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.postDeleteBtn {
+  color: #d32f2f;
+}
+
+.hidePostBtn:hover, .postDeleteBtn:hover {
+  background: #f5f5f5;
+}
+
+.undoBtnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rankQuestion {
+  font-size: 16px;
+  color: #111;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.12s;
+  /* overflow-y: auto; */
+}
+
+.rankList {
+  list-style: none;
+  margin: 0;
+  margin-top: -10px;
+  padding: 6px 0;
+  max-height: 600px;
+  overflow-y: auto;
+  /* word-break: break-all; */
+  word-wrap: break-word;
+  flex: 1;
+}
+
+.rankWrapper {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 5px 15px;
+  /* margin: 5px; */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.12s;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+  background-color: #1D3557;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.30);
+}
+
+.rankNumbers, .rankItems {
+  padding: 12px 14px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.12s;
+  color: white;
+  text-align: center;
+}
+
+.rankNumbers {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Delete Post modal (match app modal styling) ===== */
+/* Postcard.jsx uses these classes for delete confirmation. */
+.postModalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.postModalBox {
+  width: min(420px, 95vw);
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px 18px 16px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.postModalTitle {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #111;
+}
+
+.postModalMessage {
+  margin: 0 0 16px;
+  font-size: 15px;
+  color: #333;
+  word-break: break-word;
+}
+
+.postModalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.postModalCancelBtn {
+  border: 2px solid #999;
+  background: transparent;
+  color: #333;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.postModalCancelBtn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: #666;
+}
+
+.postModalDeleteBtn {
+  border: none;
+  background: #d62828;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.postModalDeleteBtn:hover {
+  background: #b91f1f;
+}
+
+.undoBtn {
+  display: inline;
+  text-align: center;
+  width: 60%;
+  font-family: Oxanium, sans-serif;
+  border-radius: 14px;
+  padding: 10px 0px;
+  transition: box-shadow 0.2s ease, transform 0.08s ease;
+  align-items: start;
+  background: transparent;
+  color: #d32f2f;
+  border: inset 0 0 0 2px #d32f2f;
+  border-style: dashed;
+  margin-bottom: 10px;
+}
+
+.blank {
+  margin: 0;
+  padding: 0;
+}
+
+.rankItems {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s ease;
+  box-shadow: -1px 0 0 #fff;
+}
+
+.rateWrap {
+  display: flex;
+  align-items: stretch;
+  text-align: left;
+  justify-content: space-between;
+  padding: 6px 8px;
+  margin: 0;
+  /* margin: 5px; */
+  font-size: 16px;
+  max-height: 1000px;
+  cursor: pointer;
+  transition: background 0.12s;
+  border-radius: 0;
+  border-bottom: 1px solid #e2e5ea;
+  overflow-wrap: anywhere;
+  /* background-color: #1D3557;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.30); */
+}
+
+.ratingItem, .ratingValue {
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  height: auto;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.12s;
+  margin: 0;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.ratingItem {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-left: 0;
+}
+
+.ratingValue {
+  flex: 0 0 auto;
+  width: auto;
+  margin-right: 0;
+}
+
+/* =========================
+   MOBILE — stacked identity layout
+   ========================= */
+@media (max-width: 767px) {
+  .postCard {
+    grid-template-columns: 48px 1fr auto;
+    padding: 14px 14px;
+  }
+
+  .postCardAvatar,
+  .postCardAvatarLink {
+    width: 48px;
+    height: 48px;
+  }
+
+  .postCardTopRow {
+    align-items: flex-start;
+  }
+
+  /* Stack name+username and tag vertically */
+  .postCardIdentity {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    flex-wrap: nowrap;
+  }
+
+  /* Name + username on one line */
+  .postCardNameRow {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .postCardName { font-size: 16px; }
+  .postCardUsername { font-size: 13px; }
+
+  /* Tag gets full line, no max-width cap */
+  .postCardCommunityTag {
+    font-size: 12px;
+    padding: 2px 6px;
+    max-width: 100%;
+  }
+
+  .postCardContent { font-size: 15px; }
+
+  .postCardLikeCount { font-size: 15px; }
+
+  .postCardFollowBtn {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-left: 0;
+  }
+
+  .pollPanel, .ratingPanel {
+    margin-bottom: 10px;
+    width: 225px;
+    max-height: 1000px;
+  }
+
+  .pollList, .ratingList {
+    max-height: 2000px;
+  }
+  
+  .postCardCommentsSection {
+    padding-top: 14px;
+    margin-top: 12px;
+  }
+
+  .commentsList {
+    margin-bottom: 4px;
+  }
+
+  .commentInputArea {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .commentInputBodyRow {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .commentInputAvatar {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  .commentInputWrapper {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .commentTextarea {
+    min-height: 88px;
+    font-size: 16px; /* reduces iOS zoom-on-focus */
+    padding: 12px;
+  }
+
+  .commentTextareaToolbar {
+    padding: 8px 10px;
+  }
+
+  .commentAddPhotoBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .commentAddPhotoBtnIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .commentInputFooter {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+
+  .commentTextareaToolbar .commentSubmitBtn {
+    padding: 8px 16px;
+    font-size: 14px;
+    min-height: 18px;
+  }
+
+  .postCardFooter {
+    gap: 6px;
+  }
+
+  .postCardFooterIcon,
+  .postCardLikeIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .rankNumbers {
+    width: 30%;
+  }
+
+  .rankItems {
+    width: 70%;
+  }
+
+  .rateWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 12px;
+  }
+
+  .ratingItem {
+    width: 100%;
+    min-height: auto;
+    min-width: fit-content;
+    padding: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .ratingValue {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+    justify-content: flex-start;
+    zoom: 80%;
+  }
+
+  .yourRatingRow > .starContainer {
+    zoom: 40%
+  }
+}
+
+/* uh remember to fix content max syncing with quesiton max */
+
+.postModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.postModalBox {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: min(90vw, 420px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.postModalTitle {
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.postModalMessage {
+  margin: 0 0 20px 0;
+  font-size: 0.95rem;
+  color: #444;
+  word-break: break-word;
+}
+
+.postModalCloseBtn {
+  border: none;
+  background: #000;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.postModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.postModalBox {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  width: min(90vw, 400px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.postModalTitle {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.postModalMessage {
+  margin: 0 0 20px;
+  color: #444;
+}
+
+.postModalActions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.postModalCancelBtn {
+  border: 1px solid #ccc;
+  background: white;
+  color: #333;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.postModalDeleteBtn {
+  border: none;
+  background: #d62828;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.postModalCloseBtn {
+  border: none;
+  background: #111;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.postModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.postModalBox {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 24px;
+  width: min(90vw, 420px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+  text-align: center;
+}
+
+.postModalTitle {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.postModalMessage {
+  margin: 0 0 22px;
+  color: #555;
+}
+
+.postModalActions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.postModalCancelBtn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid #d0d0d0;
+  background: white;
+  cursor: pointer;
+}
+
+.postModalDeleteBtn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #e03131;
+  color: white;
+  cursor: pointer;
+}
+
+.postModalCloseBtn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  composes: darkBtn;
+}
+.inlineEditTitle {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.inlineEditTextarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-sizing: border-box;
+}
+.inlineEditTitle,
+.inlineEditTextarea {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04),
+              0 2px 6px rgba(0,0,0,0.06);
+}
+.inlineError {
+  color: #d62828;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.inlineErrorInput {
+  border: 1px solid #d62828 !important;
+}
+.charCount {
+  font-size: 12px;
+  color: #888;
+  text-align: right;
+  margin-top: 4px;
+}
+.inlineFooterRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.inlineError {
+  color: #d62828;
+  font-size: 13px;
+  min-width: 200px;
+}
+
+.charCount {
+  font-size: 12px;
+  color: #888;
+}
+@media (max-width: 767px) {
+  .postCardMenu {
+    position: relative;
+  }
+
+  .postCardMenuPanel {
+    right: 0;
+    left: auto;
+    transform: none;
+    min-width: 110px;
+    max-width: calc(100vw - 32px);
+  }
+}
+.postCardEditIconBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4px;
+}
+
+.postCardEditIconBtn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.postCardEditIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.postCardInlineEdit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.postCardInlineTitleInput,
+.postCardInlineContentInput {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px 12px;
+  font-family: inherit;
+}
+
+.postCardInlineTitleInput {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.postCardInlineContentInput {
+  min-height: 120px;
+  resize: vertical;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.postCardInlineEditActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.postCardInlineCancelBtn,
+.postCardInlineSaveBtn {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.postCardInlineCancelBtn {
+  background: #ddd;
+  color: #222;
+}
+
+.postCardInlineSaveBtn {
+  background: #f08a24;
+  color: white;
+}
+
+.postCardInlineEditError {
+  color: #d32f2f;
+  font-size: 14px;
+}
+.inlineEditContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inlineEditTextarea {
+  background: #fafafa;
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.inlineEditActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.inlineSaveBtn {
+  background: #f08a24;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.inlineCancelBtn {
+  background: #ddd;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}

@@ -1,0 +1,251 @@
+.delete-account-modal {
+    /* position */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1100;
+    
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+    height: 100%;
+    
+    /* color */
+    background: #0005;
+}
+
+.delete-account-modal__menu {
+    /* position */
+    position: relative;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    /* size */
+    width: 500px;
+    max-height: 90vh;
+    padding: 30px 35px 30px 35px;
+    
+    /* border */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #0005;
+
+    /* color */
+    background: #E2E2E2;
+    
+} @media only screen and (max-width: 550px) {
+    .delete-account-modal__menu {
+        /* size */
+        max-width: calc(100% - 30px);
+    }
+}
+
+.delete-account-modal__message {
+    /* layout */
+    text-align: center;
+
+    /* size */
+    margin: 15px 15px 35px 15px;
+    
+    /* color */
+    color: #F64E4E;
+
+    /* font */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.delete-account-modal__description {
+    /* layout */
+    text-align: center;
+    
+    /* size */
+    margin: 0px 25px 20px 25px;
+    
+    /* color */
+    color: #717171;
+
+    /* font */
+    font-size: 18px;
+}
+
+.delete-account-modal__footer {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+    margin: 40px 15px 0px 15px;
+}
+
+.delete-account-modal__delete-button,
+.delete-account-modal__delete-button__disabled,
+.delete-account-modal__cancel-button {
+    /* size */
+    min-width: 70px;
+    height: auto;
+    padding: 8px 10px 8px 10px;
+    
+    /* border */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #0003;
+    
+    /* font */
+    font-size: 16px;
+    
+    /* animation */
+    transition: transform 120ms ease;
+
+} @media (hover: hover) {
+    .delete-account-modal__delete-button,
+    .delete-account-modal__delete-button__disabled,
+    .delete-account-modal__cancel-button {
+        /* animation */
+        transform: translateY(-2px);
+    }
+
+} .delete-account-modal__delete-button {
+    /* color */
+    background: #F64E4E;
+    color: #FFF;
+
+} .delete-account-modal__delete-button__disabled {
+    /* color */
+    background: #F64E4E;
+    color: #FFF;
+    opacity: 35%;
+        
+    /* select */
+    cursor: default;
+
+} .delete-account-modal__cancel-button {
+    /* color */
+    background: #FFF;
+    color: #212121;
+}
+
+.delete-account-modal__close-button {
+    /* position */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 15px;
+    height: auto;
+    padding: 10px;
+    
+    /* select */
+    cursor: pointer;
+
+}  @media (hover: hover) {
+    .delete-account-modal__close-button {
+        /* color */
+        filter: brightness(65%);
+    }
+}
+
+.confirm-key-field {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+}
+
+.confirm-key-field__label {
+    /* layout */
+    text-align: center;
+
+    /* size */
+    margin: 0px 25px 20px 25px;
+    
+    /* color */
+    color: #717171;
+    
+    /* font */
+    font-size: 16px;
+}
+
+.confirm-key-field__key {
+    /* layout */
+    text-align: center;
+
+    /* size */
+    margin: 0px 25px 20px 25px;
+    
+    /* color */
+    color: #F64E4E;
+
+    /* font */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.confirm-key-field__input-container {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* size */
+    width: 85%;
+    
+    /* border */
+    box-shadow: inset 0px 2px 3px #0005;
+    border-radius: 15px;
+
+    /* color */
+    background: #FFF;
+}
+
+.confirm-field__input,
+.confirm-field__input__confirmed {
+    /* size */
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    
+    /* border */
+    border-radius: 15px;
+    
+    /* font */
+    font-size: 16px;
+
+} .confirm-field__input::placeholder,
+  .confirm-field__input__confirmed::placeholder {
+      /* color */
+      color: #B2B2B2;
+    
+} .confirm-field__input {
+    /* color */
+    color: #717171;
+
+} .confirm-field__input__confirmed {
+    /* color */
+    color: #F64E4E;
+
+    /* font */
+    font-weight: bold;
+}
+

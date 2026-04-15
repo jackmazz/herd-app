@@ -1,0 +1,288 @@
+{
+  "communityPage": {
+    "loading": "Cargando...",
+    "error": {
+      "failedToLoad": "No se pudo cargar la comunidad"
+    },
+    "header": {
+      "channels": "Canales",
+      "members": "Miembros"
+    },
+    "membersList": {
+      "kick": "Expulsar",
+      "kickedUsers": "Usuarios expulsados",
+      "noKickedUsers": "No hay usuarios expulsados",
+      "unkick": "Reintegrar"
+    },
+    "membership": {
+      "leaveCommunity": "Salir de la comunidad",
+      "requested": "Solicitado",
+      "requestToJoin": "Solicitar unirse",
+      "joinCommunity": "Unirse a la comunidad"
+    },
+    "privateGate": "Esta comunidad es privada. Únete para ver las publicaciones.",
+    "feed": {
+      "loading": "Cargando publicaciones...",
+      "noPosts": "Aún no hay publicaciones en {{channel}}.",
+      "postButton": "Publicar"
+    },
+    "postOptions": {
+      "header": "Opciones de publicación",
+      "text": "Estándar",
+      "poll": "Encuesta",
+      "ranking": "Ranking",
+      "rating": "Valoración"
+    },
+    "postModal": {
+      "newPost": "Nueva publicación en {{communityName}}",
+      "editPost": "Editar publicación de tipo {{postType}}",
+      "titlePlaceholder": "Título...",
+      "contentPlaceholder": "¿Qué estás pensando?",
+      "titleRequired": "*Por favor proporciona un título",
+      "captionRequired": "*Por favor proporciona un pie de foto",
+      "contentRequired": "*Por favor proporciona contenido",
+      "upload": "Subir archivo",
+      "noFileSelected": "Ningún archivo seleccionado",
+      "cancel": "Cancelar",
+      "saving": "Guardando...",
+      "save": "Guardar",
+      "posting": "Publicando...",
+      "post": "Publicar"
+    },
+    "pollModal": {
+      "newPoll": "Nueva encuesta en {{communityName}}",
+      "editPoll": "Editar encuesta",
+      "questionPlaceholder": "Pregunta de la encuesta...",
+      "questionRequired": "*Por favor proporciona una pregunta",
+      "choicePlaceholder": "Opción {{number}}",
+      "choiceRequired": "*Por favor proporciona una opción",
+      "addMoreOptions": "Agregar opción",
+      "cancel": "Cancelar",
+      "posting": "Publicando...",
+      "post": "Publicar"
+    },
+    "rankingModal": {
+      "newRanking": "Nuevo ranking en {{communityName}}",
+      "editRanking": "Editar ranking",
+      "questionPlaceholder": "Pregunta del ranking...",
+      "questionRequired": "*Por favor proporciona una pregunta",
+      "itemPlaceholder": "Elemento {{number}}",
+      "itemRequired": "*Por favor proporciona un elemento",
+      "addMoreItems": "Agregar elemento",
+      "previewButton": "Vista previa",
+      "editItemsButton": "Editar elementos",
+      "cancel": "Cancelar",
+      "saving": "Guardando...",
+      "posting": "Publicando...",
+      "save": "Guardar",
+      "post": "Publicar"
+    },
+    "ratingModal": {
+      "newRating": "Nueva valoración en {{communityName}}",
+      "editRating": "Editar valoración",
+      "itemPlaceholder": "Elemento {{number}}",
+      "itemRequired": "*Por favor proporciona un elemento",
+      "contentRequired": "*Por favor proporciona un pie de foto",
+      "addMoreItems": "Agregar elemento",
+      "clearRating": "Limpiar valoración",
+      "cancel": "Cancelar",
+      "saving": "Guardando...",
+      "posting": "Publicando...",
+      "save": "Guardar",
+      "post": "Publicar"
+    }
+  },
+
+  "postCard": {
+    "follow": "+ Seguir",
+    "following": "Siguiendo",
+    "editPost": "Editar publicación",
+    "delete": "Eliminar",
+    "deletePost": "Eliminar publicación",
+    "hideContent": "Ocultar contenido",
+    "undo": "Deshacer",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "ok": "Aceptar",
+
+    "titleRequired": "*Por favor proporciona un título",
+    "captionRequired": "*Por favor proporciona un pie de foto",
+
+    "noComments": "No hay comentarios en esta publicación. ¡Sé el primero!",
+    "writeReply": "Escribe una respuesta...",
+    "writeComment": "Escribe un comentario...",
+    "reply": "Responder",
+    "comment": "Comentar",
+
+    "deleteModal": {
+      "title": "¿Eliminar publicación?",
+      "message": "¿Estás seguro de que quieres eliminar esta publicación?",
+      "errorTitle": "Error al eliminar"
+    }
+  },
+
+  "settings": {
+  "loading": "Cargando...",
+  "profile": "Configuración de perfil",
+  "language": "Idioma",
+  "communityLanguage": "Selecciona idioma de preferencia",
+  "translating": "Traduciendo la página de comunidad...",
+  "account": "Configuración de cuenta",
+  "resetPassword": "Restablecer contraseña",
+  "deleteAccount": "Eliminar cuenta",
+  "blockedUsers": "Usuarios bloqueados",
+  "cancel": "Cancelar",
+  "noResults": "No se encontraron resultados",
+  "fields": {
+    "profilePicture": "Foto de perfil",
+    "uploadPhoto": "Subir foto",
+    "displayName": "Nombre para mostrar",
+    "biography": "Biografía",
+    "username": "Nombre de usuario",
+    "email": "Correo electrónico",
+    "enablePrivateAccount": "Habilitar cuenta privada",
+    "enableEmailNotifications": "Habilitar notificaciones por correo",
+    "searchUsernames": "Buscar nombres de usuario",
+    "noBlockedUsers": "No tienes usuarios bloqueados"
+  },
+  "actions": {
+    "block": "Bloquear",
+    "unblock": "Desbloquear",
+    "resend": "Reenviar"
+  },
+  "placeholders": {
+  "displayName": "Tu nombre para mostrar...",
+  "newPassword": "Tu nueva contraseña...",
+  "confirmNewPassword": "Confirma tu nueva contraseña...",
+  "resetCode": "Tu código de restablecimiento..."
+},
+  "profilePictureModal": {
+    "message": "¿Quieres usar esta como tu nueva foto de perfil?",
+    "confirm": "Confirmar"
+  },
+  
+  "resetPasswordModal": {
+  "title": "Restablecer contraseña",
+  "currentPassword": "Contraseña actual",
+  "newPassword": "Nueva contraseña",
+  "confirmPassword": "Confirmar contraseña",
+  "cancel": "Cancelar",
+  "save": "Guardar",
+  "saving": "Guardando...",
+  "success": "...",
+  "errorSend": "...",
+  "emailSent": "Se envió un correo a",
+  "confirm": "Confirmar",
+  "resetCode": "Código de restablecimiento"
+},
+  "deleteAccountModal": {
+    "title": "Eliminar cuenta",
+  "message": "¿Estás seguro de que quieres eliminar tu cuenta?",
+  "warning": "Esta acción no se puede deshacer: tu cuenta no podrá recuperarse.",
+  "delete": "Eliminar",
+  "error": "No se pudo eliminar la cuenta, verifica tu conexión e intenta nuevamente.",
+  "confirmInstruction": "Si deseas continuar, escribe:",
+  "confirmPlaceholder": "Confirma aquí..."
+  },
+  "errors": {
+    "loadProfile": "No se pudo cargar el perfil, verifica tu conexión e intenta nuevamente.",
+    "updateProfilePicture": "No se pudo actualizar la foto de perfil, verifica el tipo de imagen e intenta nuevamente.",
+    "updateDisplayName": "No se pudo actualizar el nombre, intenta nuevamente.",
+    "displayNameRequired": "Debes ingresar un nombre",
+    "displayNameMin": "Debe tener al menos {{count}} caracteres",
+    "displayNameMax": "Debe tener menos de {{count}} caracteres",
+    "maxReached": "Se alcanzó el límite de caracteres",
+    "noFile": "No se seleccionó ningún archivo.",
+    "invalidType": "Tipo de archivo inválido. Solo se permiten .png, .jpg, .gif, .svg o .webp.",
+    "tooSmall": "El archivo debe ser mayor a 1KB.",
+    "tooLarge": "El archivo debe ser menor a 5MB."
+  }
+},
+  "placeholders": {
+  "displayName": "Tu nombre para mostrar...",
+  "biography": "Tu biografía..."
+},
+"errors": {
+  "updateBiography": "No se pudo actualizar la biografía, intenta nuevamente.",
+  "biographyMax": "La biografía debe tener menos de {{count}} caracteres",
+  "maxReached": "Se alcanzó el límite de caracteres"
+},
+"styleGuide": {
+  "title": "Guía de Estilo de Herd",
+  "subtitle": "Instrucciones para extender la aplicación manteniendo la identidad visual.",
+  "backToHome": "← Volver al inicio",
+  "copy": "Copiar",
+  "copied": "¡Copiado!",
+  "openModal": "Abrir modal de ejemplo",
+
+  "sections": {
+    "colors": {
+      "title": "1. Paleta de colores y uso",
+      "intro": "Usa estos colores para fondos, texto y acentos para mantener la identidad de la app.",
+      "codeLabel": "CSS — ejemplos de uso de colores"
+    },
+    "fonts": {
+      "title": "2. Tipografías y tamaños",
+      "intro": "Usa estas tipografías y tamaños de forma consistente. Cada ejemplo se muestra en la fuente y tamaño indicados.",
+      "codeLabel": "CSS — uso de tipografías"
+    },
+    "layout": {
+      "title": "3. Plantillas de diseño y navegación",
+      "intro": "La app usa una barra de navegación superior y un área de contenido principal. Las páginas nuevas deben vivir dentro de esta estructura. Los componentes principales deben estar centrados.",
+      "layoutMainSample": "Contenido principal (page-content) — flex: 1, padding-top: 70px",
+      "codeLabelJsx": "JSX — estructura de la app (AppLayout.jsx)",
+      "codeLabelCss": "CSS — estructura y barra de navegación"
+    },
+    "modals": {
+      "title": "4. Ventanas emergentes y modales",
+      "intro": "Guías de tamaño, posición e interacción. Haz clic en el botón para ver un modal de ejemplo.",
+      "guidelines": {
+        "overlay": "<strong>Superposición:</strong> Viewport completo, <code>position: fixed</code>, <code>z-index: 999</code>, <code>background: rgba(0,0,0,0.25)</code>. Clic fuera para cerrar.",
+        "panel": "<strong>Panel modal:</strong> Centrado. Ancho ~50% o máx. 500px. <code>z-index: 1000</code>.",
+        "style": "<strong>Estilo:</strong> <code>border-radius: 25px</code>, fondo degradado o claro, <code>box-shadow: 0 4px 15px rgba(0,0,0,0.2)</code>.",
+        "close": "<strong>Cerrar:</strong> Incluye un control visible (ej. ×) y soporte para cerrar al hacer clic fuera."
+      },
+      "codeLabelCss": "CSS — superposición y modal",
+      "codeLabelJsx": "JSX — patrón de modal",
+      "exampleTitle": "Modal de ejemplo",
+      "exampleText": "Este modal usa las mismas guías: centrado, 50% de ancho, esquinas redondeadas, fondo degradado. Haz clic fuera o en × para cerrar."
+    },
+    "feedback": {
+      "title": "5. Retroalimentación y ayuda en línea",
+      "intro": "Usa mensajes de error en rojo cuando el usuario no ha proporcionado información requerida. Usa verde para éxito. El texto de ayuda puede aparecer dentro de los campos.",
+      "errorLabel": "Error — entrada faltante o inválida",
+      "errorExample": "El nombre de la comunidad es requerido.",
+      "successLabel": "Éxito",
+      "successExample": "¡Comunidad creada!",
+      "helpLabel": "Ayuda en línea (debajo del campo)",
+      "helpExample": "¿Qué tienes en mente?",
+      "codeLabel": "CSS + JSX — retroalimentación y ayuda en línea"
+    },
+    "dataEntry": {
+      "title": "6. Estándares de entrada de datos",
+      "intro": "Los campos requeridos usan un asterisco (*). Cada campo necesita un placeholder. Los campos de contraseña incluyen un ícono para mostrar/ocultar.",
+      "codeLabel": "JSX — campos requeridos, placeholders, toggle de contraseña"
+    }
+  },
+
+  "colorCards": {
+    "navy": "Barra de navegación, tarjetas de comunidad, oscuro primario",
+    "orange": "Principal, botones, pestañas, acentos, unirse/crear",
+    "deepOrange": "Acento secundario, logo, bordes",
+    "gray": "Tarjetas, contenedores de formulario, fondos de ventanas emergentes",
+    "black": "Texto",
+    "red": "Salir / acciones destructivas",
+    "white": "Fondo del contenedor del feed",
+    "overlay": "Superposición de modales"
+  },
+
+  "fontSamples": {
+    "appName": "Orbitron, 50px — Nombre de la app (barra de navegación)",
+    "sectionHeader": "Zen Dots, 32px — Encabezados de sección (ej. Mis Comunidades, Descubrir)",
+    "formLabel": "Oxanium, 18px — Etiquetas de formulario y texto principal",
+    "secondary": "Oxanium, 14px — Campos, botones, etiquetas, texto secundario",
+    "sectionHeaderExample": "Mis Comunidades",
+    "secondaryExample": "Unirse · Etiquetas · Público"
+  }
+}
+}

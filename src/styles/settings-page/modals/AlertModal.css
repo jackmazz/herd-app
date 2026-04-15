@@ -1,0 +1,142 @@
+.alert-modal {
+    /* position */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1100;
+    
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    width: 100vw;
+    height: 100vh;
+    
+    /* color */
+    background: #0005;
+}
+
+.alert-modal__menu {
+    /* position */
+    position: relative;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    /* size */
+    width: 500px;
+    max-height: 90vh;
+    padding: 30px 35px 30px 35px;
+    
+    /* border */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #0005;
+
+    /* color */
+    background: #E2E2E2;
+    
+} @media only screen and (max-width: 550px) {
+    .alert-modal__menu {
+        max-width: calc(100% - 30px);
+    }
+}
+
+.alert-modal__message {
+    /* layout */
+    text-align: center;
+
+    /* size */
+    margin: 15px 20px 0px 20px;
+    
+    /* color */
+    color: #717171;
+
+    /* font */
+    font-size: 20px;
+}
+
+.alert-modal__message--upload-file-error {
+    color: #9a3333;
+} @media only screen and (max-width: 550px) {
+    .alert-modal__message {
+        /* size */
+        margin: 10px 20px 0px 20px;
+    
+        /* font */
+        font-size: 18px;
+    }
+}
+
+.alert-modal__footer {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+    margin: 30px 15px 0px 15px;
+}
+
+.alert-modal__confirm-button,
+.alert-modal__retry-button {
+    /* size */
+    min-width: 70px;
+    height: auto;
+    padding: 8px 10px 8px 10px;
+    
+    /* border */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #0003;
+    
+    /* color */
+    background: #FFF;
+    color: #212121;
+    
+    /* font */
+    font-size: 16px;
+    
+    /* animation */
+    transition: transform 120ms ease;
+    
+} @media (hover: hover) {
+    .alert-modal__confirm-button:hover,
+    .alert-modal__retry-button:hover {
+        /* animation */
+        transform: translateY(-2px);
+    }
+}
+
+.alert-modal__close-button {
+    /* position */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 15px;
+    height: auto;
+    padding: 10px;
+    
+    /* select */
+    cursor: pointer;
+    
+} @media (hover: hover) {
+    .alert-modal__close-button:hover {
+        /* color */
+        filter: brightness(65%);
+    }
+}
+

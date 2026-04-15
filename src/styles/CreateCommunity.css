@@ -1,0 +1,393 @@
+.createCommunityPage {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.createCommunityCard {
+  width: 100%;
+  max-width: 620px;
+  padding: 28px 32px;
+  border-radius: 16px;
+  background: #D9D9D9;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  height: fit-content;
+}
+
+.createCommunityTitle {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Zen Dots", sans-serif;
+}
+
+/* Form: single column, rows stacked */
+.communityForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* A row that places children side by side */
+.formRow {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* A single field block */
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.formField.grow {
+  flex: 1;
+}
+
+.formField.shrink {
+  flex: 0 0 140px;
+}
+
+/* Mobile: avoid condensed side-by-side fields */
+@media (max-width: 600px) {
+  .createCommunityCard {
+    padding: 20px 18px;
+  }
+
+  .createCommunityTitle {
+    font-size: 24px;
+  }
+
+  .formRow {
+    flex-direction: column;
+  }
+
+  .formField.shrink {
+    flex: 1 1 auto;
+  }
+}
+
+.fieldLabel {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tagLimit {
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+}
+
+/* Inputs & selects */
+.communityForm input[type="text"],
+.communityForm select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 3px 3px 3px #0005;
+  height: 44px;
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Color picker — full width, taller */
+.colorInput {
+  width: 100% !important;
+  height: 44px !important;
+  padding: 2px 4px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  cursor: pointer;
+  background: rgba(255,255,255,0.5) !important;
+  box-shadow: inset 3px 3px 3px #0005 !important;
+}
+
+/* Tags */
+.tagSelector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.tagChip {
+  padding: 6px 12px;
+  border-radius: 12px;
+  background: #222;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.tagChip:hover {
+  background: #444;
+}
+
+.tagChip.selected {
+  background: #f08a24;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.tagChip.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Banner upload */
+.bannerUploadLabel {
+  cursor: pointer;
+}
+
+.bannerUploadInput {
+  position: absolute;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bannerUploadBtn {
+  display: flex;              /* stretch instead of inline */
+  width: 100%;                /* full container width */
+  height: 44px;               /* match your inputs */
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.08);
+
+  color: #333;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.bannerUploadBtn:hover {
+  box-shadow: 0 2px 8px rgba(240, 100, 0, 0.35);
+  transform: translateY(-1px);
+}
+
+.bannerUploadIcon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Banner preview */
+.bannerPreviewWrap {
+  margin-top: 0;
+}
+
+.bannerPreviewLabel {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.bannerPreviewImg {
+  width: 100%;
+  max-height: 130px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Submit + Cancel row */
+.formButtonRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.createCommunityBtn {
+  flex: 1;
+  background: #f08a24;
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.createCommunityBtn:hover {
+  background: #d97720;
+}
+
+.cancelBtn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #999;
+  background: transparent;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cancelBtn:hover {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: #666;
+}
+
+/* Messages */
+.successMsg {
+  color: #4caf50;
+  text-align: center;
+}
+
+.errorMsg {
+  color: black;
+  text-align: center;
+  background: rgba(255, 107, 107, 0.9);
+  border-radius: 10px;
+  border: 1px solid #c80000;
+  padding: 8px 12px;
+  margin: 4px 0;
+  font-weight: bold;
+  font-size: 13px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.errorMsg--fileUpload {
+  color: #9a3333;
+}
+
+/* ── Character counters (add to CreateCommunity.css & CommunityPage.css) ── */
+
+.charCounter {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    margin-top: 3px;
+}
+
+.charCounter--limit {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.postModalFieldWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.postModalTextarea {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    resize: vertical;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* ── Members popup (add to CommunityPage.css) ── */
+
+.membersBtnWrapper {
+    position: relative;
+}
+
+.membersPopup {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 240px;
+    max-height: 300px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.membersPopupHeader {
+    padding: 12px 16px 8px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #888;
+    border-bottom: 1px solid #f0f0f0;
+    flex-shrink: 0;
+}
+
+.membersPopupEmpty {
+    padding: 20px 16px;
+    color: #aaa;
+    font-size: 14px;
+    text-align: center;
+}
+
+.membersPopupList {
+    list-style: none;
+    margin: 0;
+    padding: 6px 0;
+    max-height: calc(10 * 41px); /* 41px per item × 10 */
+    overflow-y: auto;
+    flex: 1;
+}
+
+.membersPopupItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.12s;
+}
+
+.membersPopupItem:hover {
+    background: #f0f0f0;
+}
+
+.membersPopupItem .memberRole {
+    font-size: 11px;
+    font-weight: 600;
+    color: #f08a24;
+    background: rgba(240, 138, 36, 0.1);
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+
+/* ── Postcard name/username link (add to Postcard.css) ── */
+
+.postCardNameLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.postCardNameLink:hover .postCardName {
+    text-decoration: underline;
+}
+
+.postCardNameLink:hover .postCardUsername {
+    text-decoration: underline;
+}

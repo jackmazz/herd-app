@@ -1,0 +1,406 @@
+* {
+    /* size */
+    box-sizing: border-box;
+}
+
+.settings-page {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    margin: 100px 0px 100px 0px;
+    gap: 50px;
+
+} @media only screen and (max-width: 950px) {
+    .settings-page {
+        /* size */
+        margin: 85px 0px 100px 0px;
+    }
+    
+} @media only screen and (max-width: 550px) {
+    .settings-page {
+        /* size */
+        margin: 90px 0px 100px 0px;
+        gap: 45px;
+    }
+}
+
+.settings-section {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-section__title {
+    /* layout */
+    text-align: left;
+
+    /* size */
+    width: 100%;
+    padding: 0px 20px 8px 20px;
+    
+    /* color */
+    color: #717171;
+    
+    /* font */
+    font-size: 30px;
+    
+} @media only screen and (max-width: 550px) {
+    .settings-section__title {
+        /* font */
+        font-size: 25px;
+    }
+}
+
+
+.settings-section__content,
+.settings-section__content__thin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 35px;
+    gap: 25px;
+
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #0005;
+    background: #E2E2E2;
+}
+
+.settings-section__content {
+    width: 850px;
+}
+
+.settings-section__content__thin {
+    width: 550px;
+}
+
+.settings-section__content input,
+.settings-section__content textarea,
+.settings-section__content__thin input,
+.settings-section__content__thin textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .settings-section__content,
+    .settings-section__content__thin {
+        max-width: calc(100vw - 70px);
+        padding: 25px 15px;
+    }
+
+} @media only screen and (max-width: 550px) {
+    .settings-section__content,
+    .settings-section__content__thin {
+        
+        /* size */
+        padding: 25px 15px;
+        gap: 20px;
+    }
+    
+} @media only screen and (max-width: 500px) {
+    .settings-section__content,
+    .settings-section__content__thin {
+        /* size */
+        max-width: calc(100vw - 50px);
+        padding: 20px 25px;
+    }
+}
+
+.settings-section__content-row,
+.settings-section__content-row__mobile-reverse {
+    /* layout */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1.5fr 1fr;
+    justify-items: stretch;
+    align-items: center;
+
+    /* size */
+    width: 100%;
+    gap: 50px;
+    
+} @media only screen and (max-width: 950px) {
+    .settings-section__content-row {
+        /* layout */
+        grid-template-rows: unset;
+        grid-template-columns: unset;
+        grid-auto-flow: row;
+        grid-auto-rows: auto;
+    }
+    
+    .settings-section__content-row__mobile-reverse {
+        /* layout */
+        grid-template-rows: unset;
+        grid-template-columns: unset;
+        grid-auto-flow: row;
+        grid-auto-rows: auto;
+    }
+    
+} @media only screen and (max-width: 550px) {
+    .settings-section__content-row {        
+        /* size */
+        gap: 40px;
+    }
+}
+
+.settings-section__content-column__center,
+.settings-section__content-column__stretch,
+.settings-section__content-column__span {
+    /* layout */
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
+    align-items: center;
+    
+    /* size */
+    height: 100%;
+    gap: 20px;
+    
+} .settings-section__content-column__center {
+    /* layout */
+    justify-items: center;
+    
+} .settings-section__content-column__stretch {
+    /* layout */
+    justify-items: stretch;
+
+} .settings-section__content-column__span {
+    /* layout */
+    justify-items: start;
+    grid-column: 1 / span 2;
+    
+} @media only screen and (max-width: 950px) {
+    .settings-section__content-column__span {
+        /* layout */
+        grid-column: unset;
+    }
+}
+
+.reset-password-button {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    width: 175px;
+    min-width: 175px;
+    max-width: 315px;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    padding: 8px 10px 8px 10px;
+    gap: 10px;
+    
+    /* color */
+    background: #F08A24;
+    color: #212121;
+    
+    /* border */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #0003;
+    
+    /* font */
+    font-size: 17px;
+    
+    /* animation */
+    transition: transform 120ms ease;
+    
+} @media (hover: hover) {
+    .reset-password-button:hover {
+        /* animation */
+        transform: translateY(-2px);
+    }
+} @media only screen and (max-width: 950px) {
+    .reset-password-button {
+        /* size */
+        width: 50%;
+    }
+    
+} @media only screen and (max-width: 550px) {
+    .reset-password-button {
+        /* size */
+        width: 175px;
+        min-width: 175px;
+        max-width: 315px;
+        height: 25px;
+        margin: 8px 0px 8px 0px;
+        padding: 7px 8px 7px 8px;
+        
+        /* border */
+        border-radius: 8px;
+        box-shadow: 0px 2px 3px #0003;
+        
+        /* font */
+        font-size: 15px;
+    }
+}
+ 
+.reset-password-button__security-icon {
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 30px;
+    height: 30px;
+    
+} @media only screen and (max-width: 550px) {
+    .reset-password-button__security-icon {
+        /* size */
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.delete-account-button {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    width: 175px;
+    min-width: 175px;
+    max-width: 315px;
+    height: 30px;
+    padding: 8px 10px 8px 10px;
+    gap: 10px;
+    
+    /* color */
+    background: #F64E4E;
+    color: #FFF;
+    
+    /* border */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #0003;
+    
+    /* font */
+    font-size: 17px;
+    
+    /* animation */
+    transition: transform 120ms ease;
+    
+} @media (hover: hover) {
+    .delete-account-button:hover {
+        /* animation */
+        transform: translateY(-2px);
+    }
+    
+} @media only screen and (max-width: 950px) {
+    .delete-account-button {
+        /* size */
+        width: 50%;
+    }
+    
+} @media only screen and (max-width: 550px) {
+    .delete-account-button {
+        /* size */
+        width: 175px;
+        min-width: 175px;
+        max-width: 315px;
+        height: 25px;
+        margin: 8px 0px 8px 0px;
+        padding: 7px 8px 7px 8px;
+        
+        /* border */
+        border-radius: 8px;
+        box-shadow: 0px 2px 3px #0003;
+        
+        /* font */
+        font-size: 15px;
+    }
+}
+
+.delete-account-button__warning-icon {
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 30px;
+    height: 30px;
+    
+} @media only screen and (max-width: 550px) {
+    .delete-account-button__warning-icon {
+        /* size */
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.settings-page__loading {
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    min-height: 80vh;
+}
+
+.settings-page__loading-text {
+    /* color */
+    color: #888;
+    
+    /* font */
+    font-size: 1.2rem;
+}
+.language-switch-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+}
+
+.language-switch-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.language-toggle-group {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.language-toggle-btn {
+    min-width: 88px;
+    height: 44px;
+    padding: 0 18px;
+    border-radius: 999px;
+    border: 1px solid #d0d0d0;
+    background: white;
+    color: #212121;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.2s ease;
+}
+
+.language-toggle-btn.active {
+    background: #ff7a00;
+    color: white;
+    border-color: #ff7a00;
+}
+
+.language-toggle-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.language-loading-text {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}
+

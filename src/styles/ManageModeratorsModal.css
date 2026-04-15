@@ -1,0 +1,110 @@
+.manageModeratorsOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.manageModeratorsModal {
+  width: min(560px, 95vw);
+  background: #c7c7c7;
+  border-radius: 18px;
+  padding: 20px 18px 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.manageModeratorsClose {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+}
+
+.manageModeratorsSearchWrap {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 999px;
+  padding: 4px 8px 4px 14px;
+  gap: 8px;
+  margin-right: 24px;
+}
+
+.manageModeratorsSearchInput {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  background: transparent;
+}
+
+.manageModeratorsSearchClear {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  color: #444;
+}
+
+.manageModeratorsList {
+  margin-top: 16px;
+  max-height: 280px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.manageModeratorsItem {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.manageModeratorsName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+}
+
+.addModeratorBtn,
+.removeModeratorBtn {
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.addModeratorBtn {
+  background: #f08a24;
+  color: #fff;
+  border: 1px solid #f08a24;
+}
+
+.removeModeratorBtn {
+  background: #fff;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+.addModeratorBtn:disabled,
+.removeModeratorBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}

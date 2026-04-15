@@ -1,0 +1,48 @@
+.editCommunityModalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 16px;
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+  box-sizing: border-box;
+}
+
+.editCommunityModal {
+  position: relative;
+  width: min(620px, 100%);
+  max-height: min(92dvh, calc(100vh - 32px));
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.editCommunityModalCard {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+  min-height: 0;
+  max-height: inherit;
+}
+
+.editCommunityModalClose {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 2;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  padding: 8px;
+}
+
+.editCommunityModalClose:hover {
+  color: #111;
+}

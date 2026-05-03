@@ -1,0 +1,185 @@
+.base-textbox {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    /* size */
+    width: 100%;
+}
+
+.base-textbox__label {
+    /* size */
+    margin: 0px 15px 10px 15px;
+    
+    /* color */
+    color: #717171;
+    
+    /* font */
+    font-size: 20px;
+    
+} @media only screen and (max-width: 550px) {
+    .base-textbox__label {
+        /* size */
+        margin: 0px 12px 10px 12px;
+    
+        /* font */
+        font-size: 18px;
+    }
+}
+
+.base-textbox__message {
+    /* size */
+    min-height: 15px;
+    margin: 5px 15px 0px 15px;
+    
+    /* color */
+    color: #F64E4E;
+    
+    /* font */
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.base-textbox__controls {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+}
+
+.base-textbox__input-container {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+    
+    /* border */
+    box-shadow: inset 0px 2px 3px #0005;
+    border-radius: 15px;
+
+    /* color */
+    background: #FFF;
+}
+
+.base-textbox__input {
+    /* size */
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    
+    /* border */
+    border-radius: 15px;
+
+    /* color */
+    color: #717171;
+    
+    /* font */
+    font-size: 16px;
+    
+} .base-textbox__input::placeholder {
+    /* color */
+    color: #B2B2B2;
+    
+}  @media only screen and (max-width: 550px) {
+    .base-textbox__input {
+        /* size */
+        padding: 8px 10px 8px 10px;
+        
+        /* border */
+        border-radius: 12px;
+        
+        /* font */
+        font-size: 14px;
+        
+        /* size */
+        margin: 5px 0px 5px 5px;
+    }
+}
+
+.base-textbox__save-button {
+    /* size */
+    width: 45px;
+    margin: 0px 10px 0px 10px;
+    padding: 6px 10px 6px 10px;
+    
+    /* border */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #0003;
+    
+    /* color */
+    background: #FF8D00;
+    color: white;
+    opacity: 0%;
+    
+    /* font */
+    font-size: 16px;
+    
+    /* animation */
+    transition: 
+        transform 120ms ease,
+        opacity 120ms ease;
+        
+} @media (hover: hover) {
+    .base-textbox__save-button:hover {
+        /* animation */
+        transform: translateY(-2px);
+    }
+    
+} @media only screen and (max-width: 550px) {
+    .base-textbox__save-button {
+        /* size */
+        width: 35px;
+        margin: 0px 0px 0px 10px;
+        padding: 5px 8px 5px 8px;
+        
+        /* border */
+        border-radius: 8px;
+        box-shadow: 0px 2px 3px #0003;
+        
+        /* font */
+        font-size: 14px;
+    }
+}
+
+.base-textbox__undo-button {
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 18px;
+    height: 18px;
+    padding: 10px 15px 10px 15px;
+    
+    /* animation */
+    transition: 
+        transform 120ms ease,
+        opacity 120ms ease;
+    
+    /* select */
+    cursor: pointer;
+    
+} @media (hover: hover) {
+    .base-textbox__undo-button:hover {
+        /* color */
+        filter: brightness(65%);
+    }
+
+} @media only screen and (max-width: 550px) {
+    .base-textbox__undo-button {
+        /* size */
+        width: 16px;
+        height: 16px;
+        padding: 8px 15px 8px 8px;
+    }
+}
+

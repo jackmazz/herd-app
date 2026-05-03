@@ -1,0 +1,135 @@
+.rulesMenu {
+    position: relative;
+    /* margin-top: 10px; */
+}
+
+.rulesMenuPanel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    z-index: 250;
+
+    width: 400px;
+    max-height: 200px;
+    overflow-y:scroll;
+    /* min-width: 190px; */
+}
+
+.rulesMenuOption {
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #111;
+    text-align: left;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rulesMenuOption:hover {
+    background: #eee;
+}
+
+.rulesMenuOption--danger {
+    color: #9a1e1e;
+}
+
+.rulesMenuOption--danger:hover {
+    background: #fdecec;
+}
+
+.rulesTitle, .rulesMessage, .rulesBody {
+    text-align: left;
+    margin: 3px;
+    padding: 3px;
+    color: #111;
+    line-height: 1;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.rulesTitle {
+    font-size: 20px;
+}
+
+.rulesMessage {
+    font-size: 14px;
+}
+
+.rulesBody {
+    padding-left: 20px;
+}
+
+.rulesBodyItem {
+    font-size: 15px;
+}
+
+.rulesContentText, .rulesRulesText {
+    width: 100%;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 15px;
+    resize: vertical;
+    min-height: 120px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.15s ease;
+}
+
+.rulesRulesText:focus { border-color: #f08a24; }
+
+@media only screen and (max-width: 1000px) {
+    .rulesMenuPanel {
+        width: 200px;
+        /* min-width: 190px; */
+    }
+
+    .rulesMenuOption {
+        width: 90%;
+        border: none;
+        border-radius: 8px;
+        background: #fff;
+        color: #111;
+        text-align: left;
+        padding: 10px 12px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .rulesTitle, .rulesMessage, .rulesBody {
+        text-align: left;
+        margin: 3px;
+        padding: 3px;
+        color: #111;
+        line-height: 1;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .rulesTitle {
+        font-size: 20px;
+    }
+
+    .rulesMessage {
+        font-size: 14px;
+    }
+
+    .rulesBody {
+        padding-left: 20px;
+    }
+
+    .rulesBodyItem {
+        font-size: 15px;
+    }
+}

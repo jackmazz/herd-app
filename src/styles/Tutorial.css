@@ -1,0 +1,100 @@
+.tutorial-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    pointer-events: none;
+}
+
+.tutorial-modal {
+    position: fixed;
+    z-index: 9999;
+    background: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    pointer-events: auto;
+}
+
+.tutorial-modal.welcome {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 90%;
+}
+
+.tutorial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tutorial-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.tutorial-footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tutorial-button {
+    background-color: #ff8c00; /* Orange theme color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+.tutorial-button.disabled {
+    background-color: #ccc !important;
+    color: #888 !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.tutorial-highlight {
+    position: fixed; /* Changed from absolute to fixed */
+    z-index: 9997;
+    border: 3px solid #ff8c00;
+    border-radius: 4px;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: all 0.1s ease; /* Snappier transition for scrolling */
+}
+
+.tutorial-help-icon {
+    cursor: pointer;
+    color: #ff8c00;
+    border: 2px solid #ff8c00;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 12px;
+    transition: background-color 0.2s, color 0.2s;
+    user-select: none;
+    vertical-align: middle;
+}
+
+.tutorial-help-icon:hover {
+    background-color: #ff8c00;
+    color: white;
+}

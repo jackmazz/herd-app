@@ -1,0 +1,161 @@
+.editCommunityModalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 16px;
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+  box-sizing: border-box;
+}
+
+.editCommunityModal {
+  position: relative;
+  width: min(620px, 100%);
+  max-height: min(92dvh, calc(100vh - 32px));
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.editCommunityModalCard {
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+  min-height: 0;
+  max-height: inherit;
+}
+
+.editCommunityModalClose {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 2;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  padding: 8px;
+}
+
+.editCommunityModalClose:hover {
+  color: #111;
+}
+
+.removeBtn {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  color: #555;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.removeBtn:hover {
+  /* transform: translateY(-3px); */
+  /* background: #eee; */
+  background-color: #ddd;
+  /* border-color: #666; */
+}
+
+.editCommunityButtonsWrapper {
+  padding-top: 10px;
+}
+
+.disabledAudioPlayer {
+  opacity: 50%;
+}
+
+/*
+ * Desktop: edit dialog uses createCommunityModal, not postModal. Global .postOverflow
+ * (CommunityPage.css) sets overflow visible so postModal scrolls — here nothing scrolls
+ * and tall content is clipped. Flex + min-height: 0 + overflow on .postOverflow fixes it.
+ */
+@media (min-width: 641px) {
+  .createCommunityModal.editCommunityDialog {
+    max-height: min(800px, calc(100dvh - 32px));
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .createCommunityModal.editCommunityDialog > .titleOverflow {
+    flex-shrink: 0;
+  }
+
+  .createCommunityModal.editCommunityDialog > form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .createCommunityModal.editCommunityDialog .postOverflow {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .createCommunityModal.editCommunityDialog .postModalActions {
+    flex-shrink: 0;
+  }
+}
+
+/* Edit community modal: one scroll surface on small viewports (title + form + actions). */
+@media (max-width: 640px) {
+  .createCommunityModalOverlay:has(.editCommunityDialog) {
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding-top: max(12px, env(safe-area-inset-top));
+    /* Extra room below the card so actions (esp. cancel) clear home indicator / browser chrome */
+    padding-bottom: max(32px, calc(env(safe-area-inset-bottom) + 28px));
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+
+  .createCommunityModal.editCommunityDialog {
+    max-height: none;
+    margin-block: auto;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding-bottom: max(28px, calc(env(safe-area-inset-bottom) + 20px));
+  }
+
+  .createCommunityModal.editCommunityDialog .postOverflow {
+    max-height: none;
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+
+  .createCommunityModal.editCommunityDialog .postModalActions {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .createCommunityModal.editCommunityDialog .postModalActions > button {
+    flex: none;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    font-size: 14px;
+    white-space: normal;
+    line-height: 1.25;
+  }
+}

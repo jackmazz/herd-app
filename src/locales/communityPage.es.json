@@ -1,0 +1,977 @@
+{
+"communityPage": {
+  "loading": "Cargando...",
+  "error": {
+    "failedToLoad": "No se pudo cargar la comunidad"
+  },
+  "channels": {
+    "all": "Todos"
+  },
+  "header": {
+    "channels": "Canales",
+    "members": "Miembros"
+  },
+  "membersList": {
+    "kick": "Expulsar",
+    "kickedUsers": "Usuarios expulsados",
+    "noKickedUsers": "No hay usuarios expulsados",
+    "unkick": "Reintegrar"
+  },
+  "membership": {
+    "leaveCommunity": "Salir de la comunidad",
+    "requested": "Solicitado",
+    "requestToJoin": "Solicitar unirse",
+    "joinCommunity": "Unirse a la comunidad"
+  },
+  "privateGate": "Esta comunidad es privada. Únete para ver las publicaciones.",
+  "feed": {
+    "loading": "Cargando publicaciones...",
+    "noPosts": "Aún no hay publicaciones en {{channel}}.",
+    "postButton": "+ Publicar"
+  },
+  "postOptions": {
+    "header": "Opciones de publicación",
+    "text": "Estándar",
+    "poll": "Encuesta",
+    "ranking": "Ranking",
+    "rating": "Valoración"
+  },
+  "postModal": {
+    "newPost": "Nueva publicación en {{communityName}}",
+    "editPost": "Editar publicación de tipo {{postType}}",
+    "titlePlaceholder": "Título...",
+    "contentPlaceholder": "¿Qué estás pensando?",
+    "titleRequired": "*Por favor proporciona un título",
+    "captionRequired": "*Por favor proporciona un pie de foto",
+    "contentRequired": "*Por favor proporciona contenido",
+    "upload": "Subir archivo",
+    "noFileSelected": "Ningún archivo seleccionado",
+    "cancel": "Cancelar",
+    "saving": "Guardando...",
+    "save": "Guardar",
+    "posting": "Publicando...",
+    "post": "Publicar",
+    "titleLabel": "Título",
+"captionLabel": "Pie de foto",
+"interactiveEditNote": "Solo puedes editar el título y el pie de foto en publicaciones interactivas."
+  },
+  "pollModal": {
+    "newPoll": "Nueva encuesta en {{communityName}}",
+    "editPoll": "Editar encuesta",
+    "questionPlaceholder": "Pregunta de la encuesta...",
+    "questionRequired": "*Por favor proporciona una pregunta",
+    "choicePlaceholder": "Opción {{number}}",
+    "choiceRequired": "*Por favor proporciona una opción",
+    "addMoreOptions": "Agregar opción",
+    "cancel": "Cancelar",
+    "posting": "Publicando...",
+    "post": "Publicar",
+    "questionLabel": "Pregunta",
+"choiceLabel": "Opción"
+  },
+  "rankingModal": {
+    "newRanking": "Nuevo ranking en {{communityName}}",
+    "editRanking": "Editar ranking",
+    "questionPlaceholder": "Pregunta del ranking...",
+    "questionRequired": "*Por favor proporciona una pregunta",
+    "itemPlaceholder": "Elemento {{number}}",
+    "itemRequired": "*Por favor proporciona un elemento",
+    "addMoreItems": "Agregar elemento",
+    "previewButton": "Vista previa",
+    "editItemsButton": "Editar elementos",
+    "cancel": "Cancelar",
+    "saving": "Guardando...",
+    "posting": "Publicando...",
+    "save": "Guardar",
+    "post": "Publicar",
+    "questionLabel": "Pregunta",
+"itemLabel": "Elemento"
+  },
+  "ratingModal": {
+    "newRating": "Nueva valoración en {{communityName}}",
+    "editRating": "Editar valoración",
+    "itemPlaceholder": "Elemento {{number}}",
+    "itemRequired": "*Por favor proporciona un elemento",
+    "contentRequired": "*Por favor proporciona un pie de foto",
+    "addMoreItems": "Agregar elemento",
+    "clearRating": "Limpiar valoración",
+    "cancel": "Cancelar",
+    "saving": "Guardando...",
+    "posting": "Publicando...",
+    "save": "Guardar",
+    "post": "Publicar",
+    "ratingItemRequired": "Por favor ingresa al menos un elemento de valoración",
+    "captionLabel": "Pie de foto",
+"itemLabel": "Elemento"
+  },
+  "search": {
+    "placeholder": "Buscar publicaciones por usuario...",
+    "buttonAlt": "Buscar",
+    "noMatches": "Ninguna publicación coincide con tu búsqueda..."
+  },
+  "music": {
+    "label": "Canción de la comunidad"
+  },
+  "rules": {
+    "seeRules": "Ver reglas",
+    "title": "Reglas de la comunidad",
+    "empty": "Esta comunidad actualmente no tiene reglas oficiales."
+  },
+  "roles": {
+    "owner": "Propietario",
+    "mod": "Moderador"
+  },
+  "manageMenu": {
+    "manageCommunity": "Administrar comunidad",
+    "editCommunity": "Editar comunidad",
+    "editRules": "Editar reglas",
+    "manageModerators": "Administrar moderadores",
+    "manageChannels": "Administrar canales",
+    "transferOwnership": "Transferir propiedad",
+    "deleteCommunity": "Eliminar comunidad"
+  },
+  "rulesModal": {
+    "title": "Editando reglas de {{communityName}}",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Introduce las reglas",
+    "rulesLabel": "Reglas",
+    "addMoreRules": "Agregar más reglas",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "contentRequired": "Por favor ingresa algo de contenido",
+    "rulePlaceholder": "Regla {{number}}"
+  },
+  "transferOwnershipModal": {
+    "title": "Transferir propiedad",
+    "noModerators": "No hay moderadores disponibles para transferir la propiedad.",
+    "success": "La propiedad se transfirió correctamente.",
+    "ok": "Aceptar",
+    "chooseModerator": "Elige un moderador para convertirlo en el nuevo propietario.",
+    "transfer": "Transferir"
+  },
+  "leaveBlockedModal": {
+    "title": "No puedes salir de la comunidad",
+    "message": "No puedes salir de esta comunidad porque eres el propietario. Puedes transferir la propiedad a un moderador.",
+    "ok": "Aceptar"
+  },
+  "deleteCommunityModal": {
+    "title": "Eliminar comunidad",
+    "question": "¿Estás seguro de que quieres eliminar esta comunidad?",
+    "description": "Esto eliminará todas las publicaciones hechas en esta comunidad.",
+    "warning": "Esta acción no se puede deshacer.",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "error": "No se pudo eliminar la comunidad. Inténtalo de nuevo."
+  },
+  "kickedView": {
+    "message1": "Has sido expulsado de esta comunidad.",
+    "message2": "Asegúrate de siempre cuidar de Herd y seguir las reglas de la comunidad."
+  },
+  "editChannelsModal": {
+    "title": "Editar canales",
+    "all": "Todos",
+    "close": "Cerrar",
+    "delete": "Eliminar",
+    "addChannel": "Agregar canal",
+    "newChannelPlaceholder": "Nuevo nombre del canal...",
+    "save": "Guardar",
+    "errors": {
+      "maxChannels": "Se alcanzó el número máximo de canales",
+      "minLength": "El nombre del canal debe tener al menos {{count}} caracteres",
+      "maxLength": "El nombre del canal debe tener menos de {{count}} caracteres",
+      "taken": "El nombre del canal ya existe",
+      "maxReached": "Se alcanzó el límite máximo de caracteres"
+    }
+  }
+},
+  "navbar": {
+  "searchCommunities": "Buscar comunidades...",
+  "search": "Buscar...",
+  "home": "Inicio",
+  "notifications": "Notificaciones",
+  "menu": "Menú",
+  "settings": "Configuración",
+  "findUsers": "Buscar usuarios",
+  "aboutUs": "Sobre nosotros",
+  "styleGuide": "Guía de estilo",
+  "logout": "Cerrar sesión",
+  "profile": "Perfil",
+  "deleteNotification": "Eliminar notificación"
+},
+
+  "postCard": {
+    "follow": "+ Seguir",
+    "following": "Siguiendo",
+    "editPost": "Editar publicación",
+    "delete": "Eliminar",
+    "deletePost": "Eliminar publicación",
+    "hideContent": "Ocultar contenido",
+    "undo": "Deshacer",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "ok": "Aceptar",
+    "titleRequired": "*Por favor proporciona un título",
+    "captionRequired": "*Por favor proporciona un pie de foto",
+    "noComments": "No hay comentarios en esta publicación. ¡Sé el primero!",
+    "writeReply": "Escribe una respuesta...",
+    "writeComment": "Escribe un comentario...",
+    "reply": "Responder",
+    "comment": "Comentar",
+    "editCommentReply": "",
+    "editComment": "",
+    "deleteModal": {
+      "title": "¿Eliminar publicación?",
+      "message": "¿Estás seguro de que quieres eliminar esta publicación?",
+      "errorTitle": "Error al eliminar"
+    }
+  },
+
+  "settings": {
+    "notifications": "Notificaciones",
+    "loading": "Cargando...",
+    "profile": "Configuración de perfil",
+    "language": "Idioma",
+    "communityLanguage": "Selecciona idioma de preferencia",
+    "translating": "Traduciendo la página de comunidad...",
+    "account": "Configuración de cuenta",
+    "resetPassword": "Restablecer contraseña",
+    "deleteAccount": "Eliminar cuenta",
+    "blockedUsers": "Usuarios bloqueados",
+    "cancel": "Cancelar",
+    "noResults": "No se encontraron resultados",
+    "accessibility": "Accesibilidad",
+
+    "fields": {
+      "screenname": "Nombre para mostrar",
+      "profilePicture": "Foto de perfil",
+      "uploadPhoto": "Subir foto",
+      "displayName": "Nombre para mostrar",
+      "biography": "Biografía",
+      "username": "Nombre de usuario",
+      "email": "Correo electrónico",
+      "enablePrivateAccount": "Habilitar cuenta privada",
+      "enableEmailNotifications": "Habilitar notificaciones por correo",
+      "searchUsernames": "Buscar nombres de usuario",
+      "noBlockedUsers": "No tienes usuarios bloqueados",
+      "enableReadingMode": "Activar modo lectura"
+    },
+    "colorMode": "Modo de color",
+"colorModeOptions": {
+  "none": "Ninguno",
+  "protanopia": "Protanopia",
+  "deuteranopia": "Deuteranopia",
+  "tritanopia": "Tritanopia",
+  "achromatopsia": "Acromatopsia"
+},
+"usernameModal": {
+  "message": "¿Estás seguro de que quieres cambiar tu nombre de usuario?",
+  "description": "No podrás recuperar tu nombre de usuario si otro usuario lo toma."
+},
+"emailModal": {
+  "message": "¿Estás seguro de que quieres cambiar tu correo electrónico?",
+  "description": "No podrás recuperar tu correo electrónico si queda registrado en otra cuenta."
+},
+"passwordField": {
+  "visibilityAlt": "Visibilidad de contraseña"
+},
+"notificationTypes": {
+  "allNotifications": "Todas las notificaciones",
+  "publicFollow": "Seguimiento público",
+  "comments": "Comentarios",
+  "replies": "Respuestas",
+  "publicCommunities": "Comunidades públicas"
+},
+
+    "actions": {
+      "block": "Bloquear",
+      "unblock": "Desbloquear",
+      "resend": "Reenviar"
+    },
+
+    "placeholders": {
+      "displayName": "Tu nombre para mostrar...",
+      "biography": "Tu biografía...",
+      "newPassword": "Tu nueva contraseña...",
+      "confirmNewPassword": "Confirma tu nueva contraseña...",
+      "resetCode": "Tu código de restablecimiento...",
+      "screenname": "Tu nombre para mostrar...",
+"username": "Tu nombre de usuario...",
+"email": "Tu correo electrónico..."
+    },
+
+    "profilePictureModal": {
+      "message": "¿Quieres usar esta como tu nueva foto de perfil?",
+      "confirm": "Confirmar"
+    },
+
+    "resetPasswordModal": {
+      "title": "Restablecer contraseña",
+      "currentPassword": "Contraseña actual",
+      "newPassword": "Nueva contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "saving": "Guardando...",
+      "success": "...",
+      "errorSend": "...",
+      "emailSent": "Se envió un correo a",
+      "confirm": "Confirmar",
+      "resetCode": "Código de restablecimiento",
+      "errors": {
+        "newPasswordRequired": "Debes ingresar una nueva contraseña",
+        "confirmPasswordRequired": "Debes confirmar la contraseña",
+        "resetCodeRequired": "Debes ingresar el código de restablecimiento",
+        "passwordMismatch": "La contraseña y su confirmación no coinciden",
+        "passwordRules": "La contraseña debe tener al menos {{count}} caracteres y contener al menos un número, un carácter especial y una letra mayúscula",
+        "passwordTooLong": "La contraseña debe tener menos de {{count}} caracteres",
+        "resetCodeTooLong": "El código de restablecimiento debe tener menos de {{count}} caracteres",
+        "maxReached": "Se alcanzó el límite máximo de caracteres"
+      }
+    },
+    "readingMode": {
+  "reset": "Restablecer"
+},
+
+    "deleteAccountModal": {
+      "title": "Eliminar cuenta",
+      "message": "¿Estás seguro de que quieres eliminar tu cuenta?",
+      "warning": "Esta acción no se puede deshacer: tu cuenta no podrá recuperarse.",
+      "delete": "Eliminar",
+      "error": "No se pudo eliminar la cuenta, verifica tu conexión e intenta nuevamente.",
+      "confirmInstruction": "Si deseas continuar, escribe:",
+      "confirmPlaceholder": "Confirma aquí..."
+    },
+
+    "errors": {
+      "loadProfile": "No se pudo cargar el perfil, verifica tu conexión e intenta nuevamente.",
+      "updateProfilePicture": "No se pudo actualizar la foto de perfil, verifica el tipo de imagen e intenta nuevamente.",
+      "updateDisplayName": "No se pudo actualizar el nombre, intenta nuevamente.",
+      "updateBiography": "No se pudo actualizar la biografía, intenta nuevamente.",
+      "displayNameRequired": "Debes ingresar un nombre",
+      "displayNameMin": "Debe tener al menos {{count}} caracteres",
+      "displayNameMax": "Debe tener menos de {{count}} caracteres",
+      "biographyMax": "La biografía debe tener menos de {{count}} caracteres",
+      "maxReached": "Se alcanzó el límite de caracteres",
+      "noFile": "No se seleccionó ningún archivo.",
+      "invalidType": "Tipo de archivo inválido. Solo se permiten .png, .jpg, .gif, .svg o .webp.",
+      "tooSmall": "El archivo debe ser mayor a 1KB.",
+      "tooLarge": "El archivo debe ser menor a 5MB.",
+      "usernameRequired": "Debes ingresar un nombre de usuario",
+"usernameMin": "El nombre de usuario debe tener al menos {{count}} caracteres",
+"usernameMax": "El nombre de usuario debe tener menos de {{count}} caracteres",
+
+"emailRequired": "Debes ingresar un correo electrónico",
+"emailMin": "El correo electrónico debe tener al menos {{count}} caracteres",
+"emailMax": "El correo electrónico debe tener menos de {{count}} caracteres",
+"invalidEmail": "Formato de correo electrónico inválido",
+"emailTaken": "Ese correo electrónico ya está registrado",
+"updateScreenname": "No se pudo actualizar el nombre para mostrar. Inténtalo nuevamente.",
+"updateUsername": "No se pudo actualizar el nombre de usuario. Verifica tu conexión e inténtalo nuevamente.",
+"updateEmail": "No se pudo actualizar el correo electrónico. Verifica tu conexión e inténtalo nuevamente.",
+
+"screennameRequired": "Debes ingresar un nombre para mostrar",
+"screennameMin": "El nombre para mostrar debe tener al menos {{count}} caracteres",
+"screennameMax": "El nombre para mostrar debe tener menos de {{count}} caracteres",
+
+"usernameTaken": "Ese nombre de usuario ya está en uso",
+"validateUsername": "No se pudo validar el nombre de usuario",
+"validateUsernameAlert": "No se pudo validar el nombre de usuario. Verifica tu conexión e inténtalo nuevamente.",
+
+"validateEmail": "No se pudo validar el correo electrónico",
+"validateEmailAlert": "No se pudo validar el correo electrónico. Verifica tu conexión e inténtalo nuevamente.",
+
+"updateColorMode": "No se pudo actualizar el modo de color. Verifica tu conexión e inténtalo nuevamente.",
+"toggleReadingMode": "No se pudo cambiar el modo lectura. Verifica tu conexión e inténtalo nuevamente."
+    }
+  },
+
+  "styleGuide": {
+    "title": "Guía de Estilo de Herd",
+    "subtitle": "Instrucciones para extender la aplicación manteniendo la identidad visual.",
+    "backToHome": "← Volver al inicio",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "openModal": "Abrir modal de ejemplo",
+
+    "sections": {
+      "colors": {
+        "title": "1. Paleta de colores y uso",
+        "intro": "Usa estos colores para fondos, texto y acentos para mantener la identidad de la app.",
+        "codeLabel": "CSS — ejemplos de uso de colores"
+      },
+      "fonts": {
+        "title": "2. Tipografías y tamaños",
+        "intro": "Usa estas tipografías y tamaños de forma consistente. Cada ejemplo se muestra en la fuente y tamaño indicados.",
+        "codeLabel": "CSS — uso de tipografías"
+      },
+      "buttons": {
+        "title": "3. Buttons",
+        "intro": "Use these buttons consistently with these colors. On hover, buttons will visually change color and may transform -2 or -3 on the y-axis.",
+        "codeLabel": "CSS — font usage",
+        "post": "Publicar",
+        "cancel": "Cancelar",
+        "leave": "Salir",
+        "delete": "Eliminar",
+        "use": "Use",
+        "postBtnMessage": " for primary actions, such as Join, Create, or Post.",
+        "cancelBtnMessage": " for secondary actions, such as Cancel, Undo, or empty feed buttons.",
+        "leaveBtnMessage": " for content removal actions, such as Block or Leave Community.",
+        "deleteBtnMessage": " for content deletion actions, such as Delete Community or Delete Account.",
+        "interactiveMessage": "Interactive button/toggle elements. Toggle buttons are used in settings to toggle preferences.",
+        "following": "Siguiendo",
+        "follow": "Seguir",
+        "block": "Bloquear",
+        "unblock": "Desbloquear"
+      },
+      "layout": {
+        "title": "4. Plantillas de diseño y navegación",
+        "intro": "La app usa una barra de navegación superior y un área de contenido principal. Las páginas nuevas deben vivir dentro de esta estructura. Los componentes principales deben estar centrados.",
+        "layoutMainSample": "Contenido principal (page-content) — flex: 1, padding-top: 70px",
+        "codeLabelJsx": "JSX — estructura de la app (AppLayout.jsx)",
+        "codeLabelCss": "CSS — estructura y barra de navegación"
+      },
+      "modals": {
+        "title": "5. Ventanas emergentes y modales",
+        "intro": "Guías de tamaño, posición e interacción. Haz clic en el botón para ver un modal de ejemplo.",
+        "guidelines": {
+          "overlay": "<strong>Superposición:</strong> Viewport completo, <code>position: fixed</code>, <code>z-index: 999</code>, <code>background: rgba(0,0,0,0.25)</code>. Clic fuera para cerrar.",
+          "panel": "<strong>Panel modal:</strong> Centrado. Ancho ~50% o máx. 500px. <code>z-index: 1000</code>.",
+          "style": "<strong>Estilo:</strong> <code>border-radius: 25px</code>, fondo degradado o claro, <code>box-shadow: 0 4px 15px rgba(0,0,0,0.2)</code>.",
+          "close": "<strong>Cerrar:</strong> Incluye un control visible (ej. ×) y soporte para cerrar al hacer clic fuera."
+        },
+        "codeLabelCss": "CSS — superposición y modal",
+        "codeLabelJsx": "JSX — patrón de modal",
+        "exampleTitle": "Modal de ejemplo",
+        "exampleText": "Este modal usa las mismas guías: centrado, 50% de ancho, esquinas redondeadas, fondo degradado. Haz clic fuera o en × para cerrar."
+      },
+      "feedback": {
+        "title": "6. Retroalimentación y ayuda en línea",
+        "intro": "Usa mensajes de error en rojo cuando el usuario no ha proporcionado información requerida. Usa verde para éxito. El texto de ayuda puede aparecer dentro de los campos.",
+        "errorLabel": "Error — entrada faltante o inválida",
+        "errorExample": "El nombre de la comunidad es requerido.",
+        "successLabel": "Éxito",
+        "successExample": "¡Comunidad creada!",
+        "helpLabel": "Ayuda en línea (debajo del campo)",
+        "helpExample": "¿Qué tienes en mente?",
+        "codeLabel": "CSS + JSX — retroalimentación y ayuda en línea"
+      },
+      "dataEntry": {
+        "title": "7. Estándares de entrada de datos",
+        "intro": "Los campos requeridos usan un asterisco (*). Cada campo necesita un placeholder. Los campos de contraseña incluyen un ícono para mostrar/ocultar.",
+        "codeLabel": "JSX — campos requeridos, placeholders, toggle de contraseña"
+      }
+    },
+    "accessibility": "Accesibilidad",
+
+    "colorCards": {
+      "navy": "Barra de navegación, tarjetas de comunidad, oscuro primario",
+      "orange": "Principal, botones, pestañas, acentos, unirse/crear",
+      "deepOrange": "Acento secundario, logo, bordes",
+      "gray": "Tarjetas, contenedores de formulario, fondos de ventanas emergentes",
+      "black": "Texto",
+      "red": "Salir / Bloquear",
+      "white": "Fondo del contenedor del feed",
+      "overlay": "Superposición de modales",
+      "blue": "Seguir",
+      "tag": "Neutral tags",
+      "brightred": "Errors / Acciones destructivas"
+    },
+
+    "fontSamples": {
+      "appName": "Orbitron, 50px — Nombre de la app (barra de navegación)",
+      "sectionHeader": "Zen Dots, 32px — Encabezados de sección (ej. Mis Comunidades, Descubrir)",
+      "formLabel": "Oxanium, 18px — Etiquetas de formulario y texto principal",
+      "secondary": "Oxanium, 14px — Campos, botones, etiquetas, texto secundario",
+      "sectionHeaderExample": "Mis Comunidades",
+      "secondaryExample": "Unirse · Etiquetas"
+    }
+  },
+
+  "homePage": {
+    "tabs": {
+      "communities": "Comunidades",
+      "forYou": "Para ti",
+      "following": "Siguiendo"
+    },
+    "loading": {
+      "page": "Cargando...",
+      "posts": "Cargando publicaciones..."
+    },
+    "interestModal": {
+      "continue": "Continuar",
+      "welcomeTitle": "Bienvenido a Herd",
+      "welcomeText": "Elige tus intereses para descubrir comunidades a las que quieras unirte.",
+      "hint": "Puedes volver a esto en cualquier momento en la página principal, en el ícono de filtros junto a Descubrir.",
+      "chooseUpTo3": "Elige hasta 3 intereses",
+      "limitMessage": "Puedes seleccionar hasta 3 etiquetas. Para explorar otra categoría, primero deselecciona una de tus etiquetas actuales.",
+      "suggested": "Comunidades sugeridas",
+      "matching": "Comunidades coincidentes",
+      "noMatches": "Aún no hay comunidades que coincidan con esos intereses."
+    },
+    "sections": {
+      "myCommunities": "Mis comunidades",
+      "discover": "Descubrir",
+      "recommended": "Recomendado"
+    },
+    "buttons": {
+      "createCommunity": "+ Crear comunidad",
+      "join": "+ Unirse",
+      "request": "+ Solicitar",
+      "requested": "Solicitado",
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "upload": "⤴ Subir"
+    },
+    "communityCard": {
+      "private": "Privado",
+      "public": "Público",
+      "scrollLeft": "Desplazar a la izquierda",
+      "scrollRight": "Desplazar a la derecha",
+      "showLess": "Mostrar menos ▲",
+      "viewAll": "Ver las {{count}} comunidades ▼"
+    },
+    "emptyStates": {
+      "noMyCommunitiesTitle": "Aún no estás en ninguna comunidad",
+      "noMyCommunitiesSubtitle": "Crea una para comenzar.",
+      "noDiscoverTitle": "Todavía no hay comunidades para descubrir",
+      "noDiscoverSubtitle": "Aquí aparecerán las comunidades basadas en tus preferencias.",
+      "noDiscoverButtonLabel": "Cambiar preferencias",
+      "noRecommendedTitle": "Aún no estás en ninguna comunidad",
+      "noRecommendedSubtitle": "Únete a uno para recibir recomendaciones.",
+      "forYouEmptyTitle": "Todavía no hay nada aquí",
+      "forYouEmptySubtitle": "Únete a comunidades y sus publicaciones aparecerán aquí.",
+      "followingEmptyTitle": "No hay publicaciones de personas que sigues",
+      "followingEmptySubtitle": "Sigue a personas para ver sus publicaciones aquí.",
+      "createFirstCommunity": "Crear primera comunidad"
+    },
+    "editPostModal": {
+      "title": "Editar tu publicación",
+      "titlePlaceholder": "Título",
+      "contentPlaceholder": "¿Qué estás pensando?",
+      "noFileSelected": "Ningún archivo seleccionado"
+    }
+  },
+  "createCommunity": {
+    "title": "Crear comunidad",
+    "fields": {
+      "communityName": "Nombre de la comunidad",
+      "communityNamePlaceholder": "ej. Juegos de mesa",
+      "visibility": "Visibilidad",
+      "tags": "Etiquetas",
+      "selectedCount": "({{count}}/{{max}} seleccionadas)",
+      "bannerColor": "Color del banner",
+      "bannerImageOptional": "Imagen del banner (opcional)",
+      "bannerPreview": "Vista previa del banner:",
+      "communitySongOptional": "Canción de la comunidad (opcional)"
+    },
+    "visibilityOptions": {
+      "public": "Pública",
+      "private": "Privada"
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "create": "Crear comunidad",
+      "uploadPhoto": "Subir foto",
+      "changePhoto": "Cambiar foto",
+      "uploadSong": "Subir canción",
+    "changeSong": "Cambiar canción"
+    },
+    "song": {
+    "limit": "Máximo {{size}} MB por archivo. MP3 normalmente es mucho más pequeño que WAV; comprime o vuelve a codificar si supera el límite."
+  },
+    "messages": {
+      "communityCreated": "¡Comunidad creada!"
+    },
+    "errors": {
+      "bannerTooLarge": "La imagen del banner es demasiado grande. El tamaño máximo es 5 MB.",
+      "mustBeLoggedIn": "Debes iniciar sesión.",
+      "communityNameRequired": "El nombre de la comunidad es obligatorio.",
+      "selectAtLeastOneTag": "Selecciona al menos una etiqueta.",
+      "communityNameExists": "Ya existe una comunidad con este nombre.",
+      "failedToCheckName": "No se pudo verificar el nombre de la comunidad.",
+      "communityCreatedNoId": "La comunidad se creó, pero no se devolvió el ID.",
+      "bannerUploadFailed": "La comunidad se creó, pero la carga del banner falló.",
+      "failedToCreateCommunity": "No se pudo crear la comunidad."
+    }
+  },
+
+  "tags": {
+    "Music": "Música",
+    "Pop Culture": "Cultura pop",
+    "Gaming": "Videojuegos",
+    "Travel": "Viajes",
+    "Food": "Comida",
+    "Sports": "Deportes",
+    "Tech": "Tecnología",
+    "Movies": "Películas",
+    "Humor": "Humor",
+    "Scary": "Terror",
+    "Science": "Ciencia",
+    "Work": "Trabajo",
+    "Love": "Amor",
+    "Art": "Arte",
+    "Nature": "Naturaleza",
+    "Books": "Libros",
+    "School": "Escuela",
+    "Fun": "Diversión",
+    "Health": "Salud",
+    "Misc.": "Varios"
+  },
+  "notifications": {
+  "header": "Notificaciones",
+  "actions": {
+    "accept": "Aceptar",
+    "deny": "Rechazar",
+    "followBack": "Seguir de vuelta",
+    "remove": "Eliminar",
+    "dismiss": "Descartar",
+    "markAsRead": "Marcar como leído",
+    "checking": "Verificando..."
+  },
+  "tabs": {
+    "unread": "Notificaciones no leídas",
+    "read": "Notificaciones leídas"
+  },
+  "loading": "Cargando notificaciones...",
+  "empty": {
+    "title": "Nada por aquí",
+    "unread": "No tienes notificaciones sin leer.",
+    "read": "No tienes notificaciones leídas.",
+    "none": "No hay notificaciones"
+  },
+  "types": {
+    "joinRequest": "Solicitud para unirse a tu comunidad privada",
+    "followRequest": "Solicitud para seguirte",
+    "followedYou": "Alguien te siguió",
+    "postLiked": "Le gustó tu publicación",
+    "commentFrom": "Comentario de {{name}}",
+    "commentInCommunity": "Comentario en tu comunidad {{communityName}}"
+  },
+  "content": {
+    "commentInCommunity": "{{name}} comentó \"{{postTitle}}\" en la comunidad {{communityName}}.",
+    "likedPost": "{{name}} le gustó tu publicación: \"{{postTitle}}\"",
+    "startedFollowing": "{{name}} empezó a seguirte."
+  }
+},
+"about": {
+  "title": "Conoce a los desarrolladores",
+  "developers": {
+    "brigid": {
+      "name": "Brigid",
+      "intro": "¡Hola! Mi nombre es Brigid y actualmente soy estudiante de Ciencias de la Computación en UB.",
+      "facts": [
+        "¡Mi muppet favorito es Gonzo!",
+        "Siempre estoy escuchando música; mi artista favorito es Hozier",
+        "Últimamente me encanta ver hockey (¡Vamos Bruins!)"
+      ]
+    },
+    "cam": {
+      "name": "Cam",
+      "intro": "¡Hola! Mi nombre es Cam y estoy en mi último año de Ciencias de la Computación en UB.",
+      "facts": [
+        "Produzco música",
+        "Mi nombre artístico es C A M",
+        "También soy vocalista y bajista en una banda de hardcore/metalcore llamada Deogen",
+        "Todo desarrollador debería usar GitKraken para un flujo visual de git (*No es patrocinio*)"
+      ]
+    },
+    "helen": {
+      "name": "Helen",
+      "intro": "¡Hola! ¡Mi nombre es Helen! Soy una de las desarrolladoras de Herd y actualmente estudio Ciencias de la Computación en UB.",
+      "facts": [
+        "Mi juego favorito es Hollow Knight.",
+        "Me gusta coleccionar latas y dibujar.",
+        "Últimamente he estado viendo The Apothecary Diaries sin parar."
+      ]
+    },
+    "jack": {
+      "name": "Jack",
+      "intro": "Mi nombre es Jack Mazzella, soy desarrollador de Herd. He estudiado Ciencias de la Computación durante casi 6 años y me graduaré de UB en unos pocos meses.",
+      "facts": [
+        "Mis animales favoritos son los pingüinos.",
+        "Mi serie favorita es The Wire.",
+        "Mi canción favorita es Light My Fire.",
+        "Mi juego favorito es Fallout 4, aunque objetivamente es malo.",
+        "Elegí la imagen del ingeniero porque me da risa."
+      ]
+    },
+    "jill": {
+      "name": "Jill",
+      "intro": "¡Hola! Soy Jill, estudiante de ciencias de la computación y robótica en UB :).",
+      "facts": [
+        "Me apasionan los robots autónomos y ML/perception, aunque también me encanta diseñar.",
+        "Mamá de dos apestosos",
+        "Puedo resolver un cubo Rubik en 30 segundos",
+        "Nací en España y crecí en Colombia"
+      ]
+    }
+  }
+},
+"searchPage": {
+  "loading": "Cargando...",
+  "title": {
+    "noQuery": "No se proporcionó una búsqueda",
+    "noResults": "No se encontraron resultados para '{{query}}'",
+    "showingResults": "Mostrando {{count}} resultados para '{{query}}'"
+  },
+  "buttons": {
+    "join": "+ Unirse",
+    "request": "+ Solicitar",
+    "requested": "Solicitado"
+  },
+  "visibility": {
+    "private": "Privada",
+    "public": "Pública"
+  },
+  "errors": {
+    "joinFailed": "No se pudo unir a la comunidad, verifica tu conexión e inténtalo de nuevo.",
+    "requestFailed": "No se pudo solicitar unirse a la comunidad, verifica tu conexión e inténtalo de nuevo.",
+    "cancelRequestFailed": "No se pudo cancelar la solicitud para unirse a la comunidad, verifica tu conexión e inténtalo de nuevo.",
+    "searchFailed": "No se pudieron buscar comunidades, verifica tu conexión e inténtalo de nuevo.",
+    "joinedCommunitiesFailed": "No se pudieron obtener las comunidades unidas, verifica tu conexión e inténtalo de nuevo.",
+    "profileFailed": "No se pudo descargar el perfil, verifica tu conexión e inténtalo de nuevo."
+  }
+},
+"editCommunityForm": {
+  "success": "¡Comunidad actualizada!",
+  "errors": {
+    "nameRequired": "El nombre de la comunidad es obligatorio.",
+    "tagRequired": "Selecciona al menos una etiqueta.",
+    "nameTaken": "Ya existe una comunidad con ese nombre.",
+    "updateFailed": "No se pudo actualizar la comunidad.",
+    "bannerTooLarge": "La imagen del banner es demasiado grande. El tamaño máximo es 5 MB.",
+    "removeBannerFailed": "No se pudo eliminar el banner.",
+    "uploadBannerFailed": "No se pudo subir el banner.",
+    "uploadSongFailed": "No se pudo subir la canción."
+  },
+  "banner": {
+    "current": "Banner actual:",
+    "remove": "Eliminar imagen del banner",
+    "undo": "Deshacer eliminación",
+    "pending": "La imagen del banner se eliminará al hacer clic en Actualizar comunidad.",
+    "preview": "Vista previa del banner:",
+    "replace": "Esto reemplazará tu banner actual.",
+    "upload": "Subir foto",
+    "change": "Cambiar foto"
+  },
+  "fields": {
+    "communityName": "Nombre de la comunidad",
+    "visibility": "Visibilidad",
+    "tags": "Etiquetas",
+    "selected": "seleccionadas",
+    "bannerColor": "Color del banner",
+    "bannerImage": "Imagen del banner (opcional)",
+    "communitySong": "Canción de la comunidad (opcional)"
+  },
+  "visibility": {
+    "public": "Pública",
+    "private": "Privada"
+  },
+  "song": {
+    "current": "Canción actual de la comunidad",
+    "remove": "Eliminar canción de la comunidad",
+    "undo": "Deshacer eliminación",
+    "pending": "La canción se eliminará al hacer clic en Actualizar comunidad.",
+    "upload": "Subir canción",
+    "change": "Cambiar canción",
+    "limit": "Máximo {{size}} MB por archivo. MP3 normalmente es mucho más pequeño que WAV; comprime o vuelve a codificar si supera el límite."
+  },
+  "buttons": {
+    "cancel": "Cancelar",
+    "update": "Actualizar comunidad"
+  }
+},
+"editCommunityModal": {
+  "title": "Editar comunidad",
+  "loading": "Cargando...",
+  "notFound": "Comunidad no encontrada.",
+  "noPermission": "No tienes permiso para editar esta comunidad.",
+  "cancel": "Cancelar",
+  "close": "Cerrar edición de comunidad",
+  "loadFailed": "No se pudo cargar la comunidad"
+},
+"manageModeratorsModal": {
+  "close": "Cerrar administración de moderadores",
+  "searchPlaceholder": "Buscar usuarios...",
+  "clearSearch": "Limpiar búsqueda",
+  "addModerator": "Agregar moderador",
+  "removeModerator": "Quitar moderador"
+},
+"userSearchModal": {
+  "title": "Buscar Usuarios",
+  "searchPlaceholder": "Buscar nombres de usuario...",
+  "empty": {
+    "noQuery": "No se proporcionó búsqueda",
+    "loading": "Cargando...",
+    "noResults": "No se encontraron resultados"
+  },
+  "buttons": {
+    "follow": "Seguir",
+    "unfollow": "Dejar de seguir",
+    "request": "Solicitar",
+    "requested": "Solicitado"
+  },
+  "alerts": {
+    "searchFailed": "No se pudieron buscar usuarios. Verifica tu conexión e inténtalo nuevamente.",
+    "followFailed": "No se pudo seguir al usuario. Verifica tu conexión.",
+    "unfollowFailed": "No se pudo dejar de seguir al usuario. Verifica tu conexión.",
+    "requestFailed": "No se pudo enviar la solicitud."
+  },
+  "alt": {
+    "close": "Cerrar",
+    "profile": "Perfil"
+  }
+},
+"profilePage": {
+  "loadingProfile": "Cargando perfil...",
+  "loading": "Cargando...",
+  "dots": "...",
+  "private": {
+    "title": "Esta cuenta es privada",
+    "requestFollow": "Solicitar seguir",
+    "followRequested": "Solicitud enviada"
+  },
+  "notFound": {
+    "title": "404 Pagina no encontrada",
+    "subtitle": "No se pudo encontrar la pagina que buscas.",
+    "goHome": "Ir al inicio"
+  },
+  "counters": {
+    "followers": "Seguidores",
+    "following": "Siguiendo",
+    "posts": "Publicaciones"
+  },
+  "followingList": {
+    "title": "Siguiendo",
+    "empty": "Este usuario no sigue a nadie..."
+  },
+  "followersList": {
+  "title": "Seguidores",
+  "empty": "Este usuario no tiene seguidores..."
+},
+  "buttons": {
+    "follow": "Seguir",
+    "unfollow": "Dejar de seguir",
+    "following": "Siguiendo",
+    "block": "Bloquear",
+    "unblock": "Desbloquear",
+    "copyProfileLink": "Copiar enlace del perfil",
+    "showMore": "Mostrar más",
+    "showLess": "Mostrar menos"
+  },
+  "messages": {
+    "linkCopied": "Enlace copiado al portapapeles",
+    "linkCopyFailed": "No se pudo copiar el enlace"
+  },
+  "constraints": {
+    "maxCharacters": "Máximo {{count}} caracteres"
+  },
+  "sections": {
+    "bio": "Biografía",
+    "recentCommunities": "Comunidades recientes",
+    "interests": "Intereses",
+    "recentPosts": "Publicaciones recientes"
+  },
+  "empty": {
+    "noRecentCommunities": "Sin actividad reciente en comunidades...",
+    "noInterests": "Aún no hay intereses...",
+    "noRecentPosts": "No hay publicaciones recientes..."
+  },
+  "blocking": {
+    "youBlocking": "Actualmente estás bloqueando a @{{username}}.",
+    "blockedBy": "Actualmente estás bloqueado por @{{username}}."
+  },
+  "profilePhotoModal": {
+  "title": "Cambiar foto de perfil",
+  "message": "¿Usar esta como tu nueva foto de perfil?",
+  "previewPlaceholder": "Sube una foto para ver una vista previa aquí...",
+  "upload": "Subir foto",
+  "confirm": "Confirmar",
+  "save": "Guardar",
+  "cancel": "Cancelar",
+  "close": "Cerrar"
+},
+"backgroundPhotoModal": {
+  "title": "Cambiar banner",
+  "message": "¿Usar este como tu nuevo banner?",
+  "previewPlaceholder": "Sube una foto para ver una vista previa aquí...",
+  "upload": "Subir foto",
+  "confirm": "Confirmar",
+  "save": "Guardar",
+  "cancel": "Cancelar",
+  "close": "Cerrar"
+},
+"editBioModal": {
+  "title": "Editar Biografía",
+  "placeholder": "",
+  "cancel": "Cancelar",
+  "save": "Guardar"
+},
+"status": {
+  "title": "Estado",
+  "neutral": "Neutral",
+  "happy": "Feliz",
+  "rofl": "Muerto de risa",
+  "cool": "Genial",
+  "depressed": "Deprimido",
+  "sleeping": "Durmiendo",
+  "scared": "Asustado",
+  "mad": "Enojado",
+  "devious": "Travieso",
+  "failedUpdate": "No se pudo actualizar el estado. Verifica tu conexión e inténtalo nuevamente."
+}
+},
+"auth": {
+  "languageToggle": "EN",
+  "login": "Iniciar sesión",
+  "signup": "Registrarse",
+  "forgotPassword": "Olvidé mi\ncontraseña",
+  "resetPassword": "Restablecer contraseña",
+  "email": "Correo electrónico",
+  "password": "Contraseña",
+  "username": "Nombre de usuario",
+  "displayName": "Nombre para mostrar",
+  "confirmPassword": "Confirmar contraseña",
+  "yourEmail": "Tu correo electrónico",
+  "yourPassword": "Tu contraseña",
+  "yourUsername": "Tu nombre de usuario",
+  "yourDisplayName": "Tu nombre para mostrar",
+  "enterToken": "Ingresa el código",
+  "forgotPasswordQuestion": "¿Olvidaste tu contraseña?",
+  "newToHerd": "¿Nuevo en Herd?",
+  "signUpLink": "Regístrate",
+  "haveAccount": "¿Ya tienes cuenta?",
+  "loginLink": "Inicia sesión",
+  "returnTo": "< Volver a",
+  "enterHerdEmail": "Ingresa el correo que usaste para Herd",
+  "enterTokenLabel": "Ingresa el código que recibiste por correo:",
+  "tokenHelp": "Si no recibiste un correo, revisa el correo que ingresaste e inténtalo de nuevo.",
+  "confirm": "Confirmar",
+  "confirmYourPassword": "Confirma tu contraseña",
+  "bannerTaglineLine1": "Encuentra comunidades de tu interés",
+"bannerTaglineLine2": "¡Únete a Herd!",
+"bannerTagline": "Encuentra comunidades de tu interés\n¡Únete a Herd!",
+  "errors": {
+    "provideEmail": "Por favor ingresa tu correo electrónico",
+    "providePassword": "Por favor ingresa tu contraseña",
+    "provideUsername": "Por favor ingresa un nombre de usuario",
+    "provideDisplayName": "Por favor ingresa un nombre para mostrar",
+    "provideToken": "Por favor ingresa el código",
+    "invalidEmail": "Correo electrónico inválido",
+    "loginFailed": "No se pudo iniciar sesión. Revisa tu correo y contraseña e inténtalo de nuevo",
+    "emailMissingAt": "El correo debe incluir @",
+"emailMissingDot": "El dominio del correo debe incluir un punto, como .com",
+"passwordRequirements": "La contraseña debe tener al menos 10 caracteres e incluir un número, un carácter especial y una letra mayúscula",
+"emailTaken": "Este correo ya tiene una cuenta asociada",
+"usernameMin": "El nombre de usuario debe tener al menos 3 caracteres",
+"displayNameMin": "El nombre para mostrar debe tener al menos 3 caracteres",
+"displayNameMax": "El nombre para mostrar puede tener máximo 10 caracteres",
+"signupFailed": "No se pudo registrar. Inténtalo de nuevo",
+"passwordRules": "La contraseña debe tener al menos 10 caracteres e incluir un número, un carácter especial y una letra mayúscula",
+"passwordNoMatch": "Las contraseñas no coinciden",
+"invalidToken": "El código es inválido o expiró",
+"resetFailed": "No se pudo restablecer la contraseña. Revisa el código y la contraseña e inténtalo de nuevo",
+"signupFailedInputs": "No se pudo registrar. Revisa tus datos e inténtalo de nuevo"
+  }
+}
+}

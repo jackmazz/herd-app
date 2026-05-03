@@ -1,0 +1,260 @@
+.edit-channels-modal {
+    /* position */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1100;
+    
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    width: 100vw;
+    height: 100vh;
+    
+    /* color */
+    background: #0005;
+}
+
+.edit-channels-modal__menu {
+    /* position */
+    position: relative;
+
+    /* layout */
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    /* size */
+    width: 400px;
+    max-height: 90vh;
+    padding: 20px 25px 20px 25px;
+    gap: 25px;
+    
+    /* border */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #0005;
+
+    /* color */
+    background: #E2E2E2;
+    
+} @media only screen and (max-width: 550px) {
+    .edit-channels-modal__menu {
+        /* size */
+        max-width: calc(100% - 30px);
+    }
+}
+
+.edit-channels-modal__title {
+    /* margin */
+    padding-top: 10px;
+
+    /* font */
+    font-size: 28px;
+    font-family: "Zen Dots", sans-serif;
+}
+
+.edit-channels-modal__channel-list {
+    /* layout */
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    
+    /* size */
+    width: 100%;
+    height: 345px;
+    padding: 20px;
+    gap: 8px;
+    
+    /* border */
+    border-radius: 15px;
+    box-shadow: inset 0px 2px 3px #0005;
+    
+    /* color */
+    background: #FFF;
+}
+
+.edit-channels-modal__close-button {
+    /* position */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    
+    /* select */
+    cursor: pointer;
+
+}  @media (hover: hover) {
+    .edit-channels-modal__close-button:hover {
+        /* color */
+        filter: brightness(65%);
+    }
+}
+
+.channel-list-item {
+    /* layout */
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+    height: 35px;
+}
+
+.channel-list-item__name,
+.channel-list-item__name__selected {
+    /* layout */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    /* font */
+    font-size: 20px;
+    
+} .channel-list-item__name {
+    /* color */
+    color: #000;
+    
+} .channel-list-item__name__selected {
+    /* color */
+    color: #F64E4E;
+    
+    /* font */
+    font-weight: bold;
+}
+
+.channel-list-item__delete-button {    
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 12px;
+    height: 12px;
+    padding: 10px;
+    
+    /* select */
+    cursor: pointer;
+
+}  @media (hover: hover) {
+    .channel-list-item__delete-button:hover {
+        /* color */
+        filter: brightness(65%);
+    }
+}
+
+.channel-field {
+    /* layout */
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    /* size */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.channel-field__label {
+    /* size */
+    margin: 0px 12px 5px 12px;
+    
+    /* color */
+    color: #000;
+    
+    /* font */
+    font-size: 18px;
+}
+
+.channel-field__message {
+    /* size */
+    min-height: 15px;
+    margin: 5px 12px 0px 12px;
+    
+    /* color */
+    color: #F64E4E;
+    
+    /* font */
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.channel-field__input-container {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+    
+    /* border */
+    box-shadow: inset 0px 2px 3px #0005;
+    border-radius: 15px;
+
+    /* color */
+    background: #FFF;
+}
+
+.channel-field__input {
+    /* size */
+    width: 100%;
+    margin: 5px;
+    padding: 7px;
+    
+    /* border */
+    border-radius: 15px;
+
+    /* color */
+    color: #000;
+    
+    /* font */
+    font-size: 16px;
+
+} .channel-field__input::placeholder {
+    /* color */
+    color: #717171;
+}
+
+.channel-field__save-button {
+    /* size */
+    padding: 10px 15px 10px 15px;
+    
+    /* color */
+    color: #F7B17F;
+    
+     /* font */
+    font-size: 15px;
+    font-weight: bold;
+    
+    /* select */
+    cursor: pointer;
+
+}  @media (hover: hover) {
+    .channel-field__save-button:hover {
+        /* color */
+        color: #FF8D00;
+    }
+}
+

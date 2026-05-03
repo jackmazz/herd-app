@@ -1,0 +1,394 @@
+/* ============================================================================================= */
+/* | REGISTER PAGE | */
+/* ============== */
+
+#signup-page {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr;
+  min-height: 100dvh;   /* use this instead of height: 100vh */
+  background: #f5f5f5;  /* or #fff */
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #signup-page {
+        /* layout */
+        grid-template-columns: 1fr;
+        /* fixed auth mobile top bar */
+        padding-top: 80px;
+        box-sizing: border-box;
+    }
+}
+
+/* ============================================================================================= */
+/* | REGISTER FORM | */
+/* ============== */
+
+#signup-form {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+    
+    /* border */
+    box-shadow: inset 5px 5px 10px #0005;
+    
+    /* color */
+    background: #FFF;
+}
+
+@media only screen and (max-width: 600px) {
+    #signup-form {
+        /* size */
+        gap: 15px;
+    }
+}
+
+/* ============================================================================================= */
+/* | REGISTER FORM TITLE | */
+/* ==================== */
+
+#signup-form-title {
+    /* size */
+    margin-bottom: 0px;
+    margin-top: -20px;
+    
+    /* font */
+    font-family: "Orbitron" !important;
+    font-size: 65px;
+}
+
+@media only screen and (max-width: 1550px) {
+    #signup-form-title {
+        /* size */
+        font-size: 65px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #signup-form-title {
+        /* size */
+        margin-bottom: 15px;
+        
+        /* font */
+        font-size: 40px;
+    }
+}
+
+/* ============================================================================================= */
+/* | REGISTER SUBMIT | */
+/* ================ */
+
+#signup-submit {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* size */
+    width: 100%;
+    margin-top: 0px;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 1550px) {
+    #signup-submit {
+        /* size */
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {    
+    #signup-button {
+        /* size */
+        margin-top: 0px;
+    }
+}
+
+/* ============================================================================================= */
+/* | REGISTER BUTTON | */
+/* ================ */
+
+#signup-button {
+    /* size */
+    width: 40%;
+    padding: 20px 10px 20px 10px;
+    
+    /* border */
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px #0007;
+    
+    /* color */
+    background: #FF8D00;
+    color: #FFF;
+    
+    /* font */
+    font-size: 35px;
+}
+
+@media (hover: hover) {
+    #signup-button:hover {
+        /* color */
+        background: #F27400;
+    }
+}
+
+#signup-button:active {
+    /* border */
+    box-shadow: inset 0px 0px 7px #0005;
+}
+
+@media only screen and (max-width: 1550px) {
+    #signup-button {
+        /* size */
+        width: 35%;
+        margin-top: 0px;
+        padding: 15px 9px 15px 9px;
+        
+        /* font */   
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 600px) {    
+    #signup-button {
+        /* size */
+        padding: 8px 5px 8px 5px;
+        
+        /* border */   
+        border-radius: 12px;
+        
+        /* font */   
+        font-size: 20px;
+    }
+}
+
+/* ============================================================================================= */
+/* | LOGIN PROMPT | */
+/* ================= */
+
+#login-prompt {
+    /* color */
+    color: #7F7F7F;
+
+    /* size */
+    margin-top: 15px;
+    margin-bottom: -5px;
+    
+    /* font */
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {        
+    #login-prompt {
+        /* size */
+        margin-top: 20px;
+        
+        /* font */
+        font-size: 17px;
+    }
+}
+
+/* ============================================================================================= */
+/* | LOGIN PROMPT LINK | */
+/* ====================== */
+
+#login-link {
+    /* color */
+    color: #F7B17F;
+    
+    /* font */
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media (hover: hover) {
+    #login-link:hover {
+        /* color */
+        color: #FF8D00;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #login-link {
+        /* font */
+        font-size: 17px;   
+    }
+}
+
+/* ============================================================================================= */
+/* | FORM FIELD | */
+/* ============== */
+
+.register-form-field {
+    /* layout */
+    display: grid;
+    width: 60%;
+    margin: 0px;
+    margin-top: 5px;
+    gap: 5px;
+    
+    /* font */
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .register-form-field {
+        /* size */
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .register-form-field {
+        /* size */
+        width: 80%;
+    }
+}
+
+/* ============================================================================================= */
+/* | FORM FIELD MESSAGE | */
+/* ====================== */
+
+.register-form-field-message {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    word-break: break-word;
+    line-height: 1.25;
+    
+    /* size */
+    margin-left: 20px;
+    margin-bottom: -5px;
+    
+    /* color */
+    color: #F64E4E;
+    
+    /* font */
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 450px) {
+    .register-form-field-message {
+        /* size */
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+  #signup-page {
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+    min-height: 100dvh;
+    overflow: hidden;
+  }
+
+  #signup-form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+    box-shadow: none;
+  }
+
+  #signup-form-title {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .register-form-field {
+    width: 88%;
+    gap: 2px;
+    font-size: 16px;
+  }
+
+  #signup-button {
+    width: 60%;
+    padding: 10px 6px;
+    font-size: 18px;
+    border-radius: 12px;
+  }
+
+  #login-prompt,
+  #login-link {
+    font-size: 15px;
+  }
+}
+#signup-page {
+    position: relative;
+}
+
+.auth-language-toggle {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    z-index: 9999;
+
+    min-width: 62px;
+    height: 38px;
+    padding: 0 16px;
+
+    border: 2px solid #f28c28;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #f28c28;
+
+    font-family: "Oxanium", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.auth-language-toggle:hover,
+.auth-language-toggle:active,
+.auth-language-toggle:focus,
+.auth-language-toggle:focus-visible {
+    background: #ffffff;
+    color: #f28c28;
+    border-color: #f28c28;
+    outline: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .auth-language-toggle {
+        top: 95px;
+        right: 14px;
+        z-index: 1;
+    }
+
+    .auth-mobile-top-bar {
+        z-index: 9999;
+    }
+}
+
+/* iPhone SE only */
+@media only screen and (max-width: 380px) and (max-height: 700px) {
+    #signup-form-title {
+        margin-top: 28px;
+    }
+}
+@media only screen and (max-width: 380px) and (max-height: 700px) {
+    #signup-form {
+        padding-top: 35px;
+    }
+}
+#banner-tagline {
+    color: #fff;
+    text-align: center;
+    white-space: pre-line;
+    width: 80%;
+    font-size: 28px;
+    font-family: "Oxanium";
+    font-weight: 600;
+    line-height: 1.35;
+}

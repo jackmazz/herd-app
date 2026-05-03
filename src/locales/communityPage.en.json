@@ -1,0 +1,1016 @@
+{
+  "communityPage": {
+    "loading": "Loading...",
+    "error": {
+      "failedToLoad": "Failed to load community"
+    },
+    "channels": {
+    "all": "All"
+  },
+    "header": {
+      "channels": "Channels",
+      "members": "Members"
+    },
+    "channels": {
+        "all": "All"
+    },
+    "membersList": {
+      "kick": "Kick",
+      "kickedUsers": "Kicked users",
+      "noKickedUsers": "No kicked users",
+      "unkick": "Unkick"
+    },
+    "membership": {
+      "leaveCommunity": "Leave Community",
+      "requested": "Requested",
+      "requestToJoin": "Request to Join",
+      "joinCommunity": "Join Community"
+    },
+    "privateGate": "This community is private. Join to view posts.",
+    "feed": {
+      "loading": "Loading posts...",
+      "noPosts": "No posts in {{channel}} yet.",
+      "postButton": "+ Post"
+    },
+    "postOptions": {
+      "header": "Post Options",
+      "text": "Standard",
+      "poll": "Poll",
+      "ranking": "Ranking",
+      "rating": "Rating"
+    },
+    "postModal": {
+      "newPost": "New post in {{communityName}}",
+      "editPost": "Edit {{postType}} post",
+      "titlePlaceholder": "Title...",
+      "contentPlaceholder": "What's on your mind?",
+      "titleRequired": "*Please provide a title",
+      "captionRequired": "*Please provide a caption",
+      "contentRequired": "*Please provide content",
+      "upload": "Upload file",
+      "noFileSelected": "No file selected",
+      "cancel": "Cancel",
+      "saving": "Saving...",
+      "save": "Save",
+      "posting": "Posting...",
+      "post": "Post",
+      "titleLabel": "Title",
+"captionLabel": "Caption",
+"interactiveEditNote": "You can only edit the title and caption on interactive posts."
+    },
+    "pollModal": {
+      "newPoll": "New poll in {{communityName}}",
+      "editPoll": "Edit poll",
+      "questionPlaceholder": "Poll question...",
+      "questionRequired": "*Please provide a poll question",
+      "choicePlaceholder": "Choice {{number}}",
+      "choiceRequired": "*Please provide a choice",
+      "addMoreOptions": "Add option",
+      "cancel": "Cancel",
+      "posting": "Posting...",
+      "post": "Post",
+      "questionLabel": "Question",
+"choiceLabel": "Choice"
+    },
+    "rankingModal": {
+      "newRanking": "New ranking in {{communityName}}",
+      "editRanking": "Edit ranking",
+      "questionPlaceholder": "Ranking question...",
+      "questionRequired": "*Please provide a ranking question",
+      "itemPlaceholder": "Item {{number}}",
+      "itemRequired": "*Please provide an item",
+      "addMoreItems": "Add item",
+      "previewButton": "Preview",
+      "editItemsButton": "Edit items",
+      "cancel": "Cancel",
+      "saving": "Saving...",
+      "posting": "Posting...",
+      "save": "Save",
+      "post": "Post",
+      "questionLabel": "Question",
+"itemLabel": "Item"
+    },
+    "ratingModal": {
+      "newRating": "New rating in {{communityName}}",
+      "editRating": "Edit rating",
+      "itemPlaceholder": "Item {{number}}",
+      "itemRequired": "*Please provide an item",
+      "contentRequired": "*Please provide a caption",
+      "addMoreItems": "Add item",
+      "clearRating": "Clear rating",
+      "cancel": "Cancel",
+      "saving": "Saving...",
+      "posting": "Posting...",
+      "save": "Save",
+      "post": "Post",
+      "ratingItemRequired": "Please enter at least one rating item",
+      "captionLabel": "Caption",
+"itemLabel": "Item"
+    },
+    "search": {
+      "placeholder": "Search posts by user...",
+      "buttonAlt": "Search",
+      "noMatches": "No posts match your query..."
+    },
+    "music": {
+      "label": "Community Song"
+    },
+    "rules": {
+      "seeRules": "See Rules",
+      "title": "Community Rules",
+      "empty": "This community currently has no official rules."
+    },
+    "roles": {
+      "owner": "Owner",
+      "mod": "Mod"
+    },
+    "manageMenu": {
+      "manageCommunity": "Manage Community",
+      "editCommunity": "Edit Community",
+      "editRules": "Edit Rules",
+      "manageModerators": "Manage Moderators",
+      "manageChannels": "Manage Channels",
+      "transferOwnership": "Transfer Ownership",
+      "deleteCommunity": "Delete Community"
+    },
+    "rulesModal": {
+      "title": "Editing Rules in {{communityName}}",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Introduce the rules",
+      "rulesLabel": "Rules",
+      "addMoreRules": "Add more rules",
+      "cancel": "Cancel",
+      "save": "Save",
+      "contentRequired": "Please enter some amount of content",
+      "rulePlaceholder": "Rule {{number}}"
+    },
+    "transferOwnershipModal": {
+      "title": "Transfer Ownership",
+      "noModerators": "There are no moderators available to transfer ownership to.",
+      "success": "Ownership transferred successfully.",
+      "ok": "OK",
+      "chooseModerator": "Choose a moderator to become the new owner.",
+      "transfer": "Transfer"
+    },
+    "leaveBlockedModal": {
+      "title": "Cannot Leave Community",
+      "message": "You can not leave this community because you are the owner. You can transfer ownership to a moderator.",
+      "ok": "OK"
+    },
+    "deleteCommunityModal": {
+      "title": "Delete Community",
+      "question": "Are you sure you want to delete this community?",
+      "description": "This will delete all posts made in this community.",
+      "warning": "This action can not be undone.",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "error": "Could not delete this community. Please try again."
+    },
+    "kickedView": {
+      "message1": "You've been kicked from this community.",
+      "message2": "Be sure to always care for the Herd and follow community guidelines."
+    },
+    "editChannelsModal": {
+  "title": "Edit Channels",
+  "all": "All",
+  "close": "Close",
+  "delete": "Delete",
+  "addChannel": "Add Channel",
+  "newChannelPlaceholder": "New Channel Name...",
+  "save": "Save",
+  "errors": {
+    "maxChannels": "Maximum number of channels reached",
+    "minLength": "Channel name must be at least {{count}} characters",
+    "maxLength": "Channel name must be under {{count}} characters",
+    "taken": "Channel name already taken",
+    "maxReached": "Reached maximum character limit"
+  }
+}
+  },
+  "navbar": {
+  "searchCommunities": "Search Communities...",
+  "search": "Search...",
+  "home": "Home",
+  "notifications": "Notifications",
+  "menu": "Menu",
+  "settings": "Settings",
+  "findUsers": "Find Users",
+  "aboutUs": "About Us",
+  "styleGuide": "Style Guide",
+  "logout": "Logout",
+  "profile": "Profile",
+  "deleteNotification": "Delete notification"
+},
+
+  "postCard": {
+    "follow": "+ Follow",
+    "following": "Following",
+    "editPost": "Edit Post",
+    "delete": "Delete",
+    "deletePost": "Delete Post",
+    "hideContent": "Hide Content",
+    "undo": "Undo",
+    "cancel": "Cancel",
+    "save": "Save",
+    "ok": "OK",
+
+    "titleRequired": "*Please provide a title",
+    "captionRequired": "*Please provide a caption",
+
+    "noComments": "There are no comments on this post. Be the first!",
+    "writeReply": "Write a reply...",
+    "writeComment": "Write a comment...",
+    "reply": "Reply",
+    "comment": "Comment",
+    "editCommentReply": "Edit Reply",
+    "editComment": "Edit Comment",
+
+    "deleteModal": {
+      "title": "Delete post?",
+      "message": "Are you sure you want to delete this post?",
+      "errorTitle": "Delete Failed"
+    }
+  },
+
+  "settings": {
+    "resetPasswordModal": {
+  "title": "Reset Password",
+  "currentPassword": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "cancel": "Cancel",
+  "save": "Save",
+  "saving": "Saving...",
+  "success": "Password updated successfully.",
+  "errorSend": "Failed to send reset email.",
+  "emailSent": "An email was sent to",
+  "confirm": "Confirm",
+  "resetCode": "Reset Code",
+  "errors": {
+    "newPasswordRequired": "New password must be provided",
+    "confirmPasswordRequired": "Confirm password must be provided",
+    "resetCodeRequired": "Reset code must be provided",
+    "passwordMismatch": "Passwords do not match",
+    "passwordRules": "Password must be at least {{count}} characters and contain one number, one special character, and one uppercase letter",
+    "passwordTooLong": "Password must be under {{count}} characters",
+    "resetCodeTooLong": "Reset code must be under {{count}} characters",
+    "maxReached": "Reached maximum character limit"
+  }
+},
+"emailModal": {
+    "message": "Are you sure you want to change your email?",
+    "description": "You won't be able to recover your email if it gets registered for another account."
+},
+"usernameModal": {
+    "message": "Are you sure you want to change your username?",
+    "description": "You won't be able to recover your username if it gets taken by another user."
+},
+"notifications": "Notifications",
+    "loading": "Loading...",
+    "profile": "Profile Settings",
+    "language": "Language",
+    "communityLanguage": "Select Preferred Language",
+    "translating": "Translating Community Page...",
+    "account": "Account Settings",
+    "resetPassword": "Reset Password",
+    "deleteAccount": "Delete Account",
+    "blockedUsers": "Manage Blocked Users",
+    "cancel": "Cancel",
+    "noResults": "No results found",
+"actions": {
+  "block": "Block",
+  "unblock": "Unblock",
+  "resend": "Resend"
+},
+"colorMode": "Color Mode",
+"colorModeOptions": {
+  "none": "None",
+  "protanopia": "Protanopia",
+  "deuteranopia": "Deuteranopia",
+  "tritanopia": "Tritanopia",
+  "achromatopsia": "Achromatopsia"
+},
+"notificationTypes": {
+  "allNotifications": "All Notifications",
+  "publicFollow": "Public Follow",
+  "comments": "Comments",
+  "replies": "Replies",
+  "publicCommunities": "Public Communities"
+},
+"accessibility": "Accessibility",
+    "fields": {
+      "screenname": "Screen Name",
+      "profilePicture": "Profile Picture",
+      "uploadPhoto": "Upload Photo",
+      "displayName": "Display Name",
+      "biography": "Biography",
+      "username": "Username",
+      "email": "Email",
+      "enablePrivateAccount": "Enable Private Account",
+      "enableEmailNotifications": "Enable Email Notifications",
+      "enableReadingMode": "Enable Reading Mode",
+      "searchUsernames": "Search usernames",
+      "noBlockedUsers": "You have no blocked users"
+    },
+
+    "placeholders": {
+      "displayName": "Your Display Name...",
+      "biography": "Your Bio...",
+      "resetCode": "Enter your reset code here...",
+      "newPassword": "Enter your new password here...",
+      "confirmNewPassword": "Confirm your new password...",
+      "screenname": "Your Screen Name...",
+      "username": "Your Username...",
+      "email": "Your Email..."
+    },
+
+    "profilePictureModal": {
+      "message": "Set this as your new profile picture?",
+      "confirm": "Confirm"
+    },
+"readingMode": {
+  "reset": "Reset"
+},
+    "errors": {
+  "loadProfile": "Failed to download profile, check your internet connection and try again.",
+  "updateProfilePicture": "Failed to update profile picture, check your image type and try again.",
+  "updateDisplayName": "Failed to update display name, check your internet connection and try again.",
+  "displayNameRequired": "Display name must be provided",
+  "displayNameMin": "Display name must be at least {{count}} characters",
+  "displayNameMax": "Display name must be under {{count}} characters",
+  "maxReached": "Reached maximum character limit",
+  "noFile": "No file was selected.",
+  "invalidType": "Invalid file type. Only .png, .jpg, .gif, .svg, or .webp files are allowed.",
+  "tooSmall": "File size must be over 1KB.",
+  "tooLarge": "File size must be under 5MB.",
+  "toggleReadingMode": "Failed to toggle reading mode, check your internet connection and try again.",
+  "usernameRequired": "Username must be provided",
+"usernameMin": "Username must be at least {{count}} characters",
+"usernameMax": "Username must be under {{count}} characters",
+
+"emailRequired": "Email must be provided",
+"emailMin": "Email must be at least {{count}} characters",
+"emailMax": "Email must be under {{count}} characters",
+"invalidEmail": "Invalid email format",
+"emailTaken": "Email already registered",
+
+"screennameRequired": "Screen name must be provided",
+"screennameMin": "Screen name must be at least {{count}} characters",
+"screennameMax": "Max screen name is {{count}} characters",
+
+"updateScreenname": "Failed to update screen name. Please try again.",
+"updateUsername": "Failed to update username. Check your internet connection and try again.",
+"updateEmail": "Failed to update email. Check your internet connection and try again.",
+
+"usernameTaken": "That username is already in use",
+"validateUsername": "Failed to validate username",
+"validateUsernameAlert": "Failed to validate username. Check your internet connection and try again.",
+
+"validateEmail": "Failed to validate email",
+"validateEmailAlert": "Failed to validate email. Check your internet connection and try again.",
+
+"updateColorMode": "Failed to update color mode. Check your internet connection and try again."
+},
+
+  "deleteAccountModal": {
+    "title": "Delete Account",
+    "message": "Are you sure you want to delete your account?",
+    "warning": "This action cannot be undone - your account will be unrecoverable.",
+    "delete": "Delete",
+    "error": "Failed to delete account, check your internet connection and try again.",
+    "confirmInstruction": "If you wish to proceed, please enter:",
+    "confirmPlaceholder": "Confirm here..."
+  }
+    
+  },
+  "placeholders": {
+  "displayName": "Your Display Name...",
+  "biography": "Your Biography...",
+  "newPassword": "Your New Password...",
+  "confirmNewPassword": "Confirm Your New Password...",
+  "resetCode": "Your Reset Code..."
+},
+"errors": {
+  "updateBiography": "Failed to update biography, check your internet connection and try again.",
+  "biographyMax": "Biography must be under {{count}} characters",
+  "maxReached": "Reached maximum character limit"
+},
+"styleGuide": {
+  "title": "Herd Style Guide",
+  "subtitle": "Instructions for extending the application while maintaining branding and look & feel.",
+  "backToHome": "← Back to Home",
+  "copy": "Copy",
+  "copied": "Copied!",
+  "openModal": "Open example modal",
+
+  "sections": {
+    "colors": {
+      "title": "1. Color palette and use",
+      "intro": "Use these colors for backgrounds, text, and accents so the app stays on-brand.",
+      "codeLabel": "CSS — color usage examples"
+    },
+    "fonts": {
+      "title": "2. Fonts and font sizes",
+      "intro": "Use these typefaces and sizes consistently. Each example below is rendered in the specified font and size.",
+      "codeLabel": "CSS — font usage"
+    },
+    "buttons": {
+      "title": "3. Buttons",
+      "intro": "Use these buttons consistently with these colors. On hover, buttons will visually change color and may transform -2 or -3 on the y-axis.",
+      "codeLabel": "CSS — font usage",
+      "post": "Post",
+      "cancel": "Cancel",
+      "leave": "Leave",
+      "delete": "Delete",
+      "use": "Use",
+      "postBtnMessage": " and similar classes for primary actions, such as Join, Create, or Post.",
+      "cancelBtnMessage": " and similar classes for secondary actions, such as Cancel, Undo, or empty feed buttons.",
+      "leaveBtnMessage": " and similar classes for content removal actions, such as Block or Leave Community.",
+      "deleteBtnMessage": " and similar classes for content deletion actions, such as Delete Community or Delete Account.",
+      "interactiveMessage": "Interactive button/toggle elements. These buttons are used for actions that have a simple corresponding undo action. Toggles are used in settings to toggle preferences.",
+      "following": "Following",
+      "follow": "Follow",
+      "block": "Block",
+      "unblock": "Unblock"
+    },
+    "layout": {
+      "title": "4. Layout and navigation templates",
+      "intro": "The app uses a top navbar and a main content area. New pages should live inside this shell. Main components should be centered (containers and modals) like how they are displayed on this page.",
+      "layoutMainSample": "Main content (page-content) — flex: 1, padding-top: 70px",
+      "codeLabelJsx": "JSX — App shell (AppLayout.jsx)",
+      "codeLabelCss": "CSS — shell and navbar"
+    },
+    "modals": {
+      "title": "5. Popups and modals",
+      "intro": "Size, position, and interaction guidelines. Click the button to see an example modal.",
+      "guidelines": {
+        "overlay": "<strong>Overlay:</strong> Full viewport, <code>position: fixed</code>, <code>z-index: 999</code>, <code>background: rgba(0,0,0,0.25)</code>. Click overlay to close.",
+        "panel": "<strong>Modal panel:</strong> Centered (e.g. <code>top: 50%; left: 50%; transform: translate(-50%, -50%)</code>). Width ~50% or max 500px; height as needed (e.g. 450px for upload). <code>z-index: 1000</code>.",
+        "style": "<strong>Style:</strong> <code>border-radius: 25px</code>, gradient or light background, <code>box-shadow: 0 4px 15px rgba(0,0,0,0.2)</code>.",
+        "close": "<strong>Close:</strong> Provide a visible close control (e.g. ×) and support overlay click outside to dismiss."
+      },
+      "codeLabelCss": "CSS — overlay and modal",
+      "codeLabelJsx": "JSX — modal pattern",
+      "exampleTitle": "Example modal",
+      "exampleText": "This modal uses the same overlay and panel guidelines: centered, 50% width, rounded corners, gradient background. Click outside or × to close."
+    },
+    "feedback": {
+      "title": "6. Treatment of feedback and inline help",
+      "intro": "Use red error messages when the user has not provided required information or validation fails. Use green for success. Inline help text can appear in fields to guide input.",
+      "errorLabel": "Error — missing/invalid input",
+      "errorExample": "Community name is required.",
+      "successLabel": "Success",
+      "successExample": "Community created!",
+      "helpLabel": "Inline help (below field)",
+      "helpExample": "What's on your mind?",
+      "codeLabel": "CSS + JSX — feedback and inline help"
+    },
+    "dataEntry": {
+      "title": "7. Standards for data entry",
+      "intro": "Required fields use an asterisk (*). Every input needs a placeholder. Password fields include an eye icon to toggle visibility.",
+      "loginsignup": "This are the input fields used for the login/signup pages.",
+      "codeLabel": "JSX — required fields, placeholders, password toggle"
+    },
+    "postTypes": {
+      "title": "8. Post Types",
+      "intro": "Standard posts support optional attachments (image/video/audio). Interactive post types are poll, ranking, and rating.",
+      "postCardName": "The GOAT",
+      "postCardUsername": "@goat",
+      "postCardCommunityTag": "GOATS"
+    }
+  },
+
+  "colorCards": {
+    "navy": "Navbar, community cards, primary dark, tags",
+    "blue": "Follow",
+    "orange": "Primary, buttons, tabs, accents, join/create",
+    "deepOrange": "Secondary accent, logo, borders, pin",
+    "gray": "Cards, form containers, popup backgrounds",
+    "black": "Text",
+    "red": "Leave / Block",
+    "white": "Feed shell background",
+    "overlay": "Modal overlay",
+    "tag": "Neutral tags",
+    "brightred": "Errors / Descructive actions"
+  },
+
+  "fontSamples": {
+    "appName": "Orbitron, 50px — App name (navbar)",
+    "sectionHeader": "Zen Dots, 32px — Section headers/titles (e.g. My Communities, Discover, Recommended)",
+    "formLabel": "Oxanium, 48px — Community Name",
+    "modalTitle": "Oxanium, 22px — Modal Titles",
+    "secondary": "Oxanium, 15px — Inputs, buttons, tags, secondary text",
+    "sectionHeaderExample": "My Communities",
+    "secondaryExample": "Join Community · Tags"
+  }
+},
+"homePage": {
+  "tabs": {
+    "communities": "Communities",
+    "forYou": "For you",
+    "following": "Following"
+  },
+  "loading": {
+    "page": "Loading...",
+    "posts": "Loading posts..."
+  },
+  "interestModal": {
+    "continue": "Continue",
+    "welcomeTitle": "Welcome to Herd",
+    "welcomeText": "Pick your interests to discover communities you may want to join.",
+    "hint": "You can revisit this anytime in Homepage, in the filters icon next to Discover.",
+    "chooseUpTo3": "Choose up to 3 interests",
+    "limitMessage": "You can select up to 3 tags. To explore another category, deselect one of your current tags first.",
+    "suggested": "Suggested communities",
+    "matching": "Matching communities",
+    "noMatches": "No communities match those interests yet."
+  },
+  "sections": {
+    "myCommunities": "My Communities",
+    "discover": "Discover",
+    "recommended": "Recommended"
+  },
+  "buttons": {
+    "createCommunity": "+ Create Community",
+    "join": "+ Join",
+    "request": "+ Request",
+    "requested": "Requested",
+    "cancel": "Cancel",
+    "save": "Save",
+    "upload": "⤴ Upload"
+  },
+  "communityCard": {
+    "private": "Private",
+    "public": "Public",
+    "scrollLeft": "Scroll left",
+    "scrollRight": "Scroll right",
+    "showLess": "Show less ▲",
+    "viewAll": "View all {{count}} communities ▼"
+  },
+  "emptyStates": {
+    "noMyCommunitiesTitle": "You're not in any communities yet",
+    "noMyCommunitiesSubtitle": "Create one to get started.",
+    "noDiscoverTitle": "No communities to discover yet",
+    "noDiscoverSubtitle": "Communites based off your preferences will appear here.",
+    "noDiscoverButtonLabel": "Change preferences",
+    "noRecommendedTitle": "You're not in any communites yet",
+    "noRecommendedSubtitle": "Join one to get recommendations.",
+    "forYouEmptyTitle": "Nothing here yet",
+    "forYouEmptySubtitle": "Join communities and their posts will appear here.",
+    "followingEmptyTitle": "No posts from people you follow",
+    "followingEmptySubtitle": "Follow people to see their posts here.",
+    
+    "createFirstCommunity": "Create first community"
+  },
+  "editPostModal": {
+    "title": "Edit your post",
+    "titlePlaceholder": "Title",
+    "contentPlaceholder": "What's on your mind?",
+    "noFileSelected": "No File selected"
+  }
+},
+"createCommunity": {
+  "title": "Create Community",
+  "fields": {
+    "communityName": "Community Name",
+    "communityNamePlaceholder": "e.g. Board Games",
+    "visibility": "Visibility",
+    "tags": "Tags",
+    "selectedCount": "({{count}}/{{max}} selected)",
+    "bannerColor": "Banner Color",
+    "bannerImageOptional": "Banner Image (optional)",
+    "bannerPreview": "Banner preview:",
+    "communitySongOptional": "Community Song (optional)"
+  },
+  "visibilityOptions": {
+    "public": "Public",
+    "private": "Private"
+  },
+  "buttons": {
+    "cancel": "Cancel",
+    "create": "Create Community",
+    "uploadPhoto": "Upload photo",
+    "changePhoto": "Change photo",
+    "uploadSong": "Upload Song",
+    "changeSong": "Change Song"
+  },
+  "song": {
+    "limit": "Max {{size}} MB per file. MP3 is usually much smaller than WAV; compress or re-encode if your file is over the limit."
+  },
+  "messages": {
+    "communityCreated": "Community created!"
+  },
+  "errors": {
+    "bannerTooLarge": "Banner image is too large. Maximum size is 5 MB.",
+    "mustBeLoggedIn": "You must be logged in.",
+    "communityNameRequired": "Community name is required.",
+    "selectAtLeastOneTag": "Please select at least one tag.",
+    "communityNameExists": "A community with this name already exists.",
+    "failedToCheckName": "Failed to check community name.",
+    "communityCreatedNoId": "Community created but ID not returned.",
+    "bannerUploadFailed": "Community created, but banner upload failed.",
+    "failedToCreateCommunity": "Failed to create community.",
+    "newPasswordRequired": "New password must be provided",
+  "confirmPasswordRequired": "Confirm password must be provided",
+  "resetCodeRequired": "Reset code must be provided"
+  }
+},
+ "tags": {
+  "Music": "Music",
+  "Pop Culture": "Pop Culture",
+  "Gaming": "Gaming",
+  "Travel": "Travel",
+  "Food": "Food",
+  "Sports": "Sports",
+  "Tech": "Tech",
+  "Movies": "Movies",
+  "Humor": "Humor",
+  "Scary": "Scary",
+  "Science": "Science",
+  "Work": "Work",
+  "Love": "Love",
+  "Art": "Art",
+  "Nature": "Nature",
+  "Books": "Books",
+  "School": "School",
+  "Fun": "Fun",
+  "Health": "Health",
+  "Misc.": "Misc."
+},
+  "actions": {
+    "accept": "Accept",
+    "deny": "Deny",
+    "followBack": "Follow Back",
+    "remove": "Remove",
+    "dismiss": "Dismiss",
+    "markAsRead": "Mark as read",
+    "checking": "Checking..."
+  },
+"notifications": {
+  "header": "Notifications",
+
+  "actions": {
+    "accept": "Accept",
+    "deny": "Deny",
+    "followBack": "Follow Back",
+    "remove": "Remove",
+    "dismiss": "Dismiss",
+    "markAsRead": "Mark as read",
+    "checking": "Checking..."
+  },
+
+  "tabs": {
+    "unread": "Unread Notifications",
+    "read": "Read Notifications"
+  },
+
+  "loading": "Loading notifications...",
+
+  "empty": {
+    "title": "Nothing here yet",
+    "unread": "You have no unread notifications.",
+    "read": "You have no read notifications.",
+    "none": "No notifications"
+  },
+
+  "types": {
+    "joinRequest": "Request to Join Your Private Community",
+    "followRequest": "Request to Follow",
+    "followedYou": "Someone Followed You",
+    "postLiked": "Post Liked",
+    "commentFrom": "Comment from {{name}}",
+    "commentInCommunity": "Comment in your community {{communityName}}"
+  },
+
+  "content": {
+    "commentInCommunity": "{{name}} commented \"{{postTitle}}\" in the community {{communityName}}.",
+    "likedPost": "{{name}} liked your post: \"{{postTitle}}\"",
+    "startedFollowing": "{{name}} started following you."
+  }
+},
+"about": {
+  "title": "Meet the Developers",
+  "developers": {
+    "brigid": {
+      "name": "Brigid",
+      "intro": "Hello!! My name is Brigid in currently a Computer Science student at UB!!",
+      "facts": [
+        "My favorite muppet is Gonzo!!!",
+        "I'm always listening to music, my favorite artist is Hozier",
+        "Recently, I love watching hockey (Go Bruins!)"
+      ]
+    },
+    "cam": {
+      "name": "Cam",
+      "intro": "Hi! My name is Cam and I'm a 1st semester senior in Computer Science at UB!",
+      "facts": [
+        "I produce music",
+        "My personal artist name is C A M",
+        "I'm also the vocalist and bassist in a hardcore/metalcore band named Deogen",
+        "Every developer should use GitKraken for a visual git flow (*Not a sponsor*)"
+      ]
+    },
+    "helen": {
+      "name": "Helen",
+      "intro": "Hi! My name is Helen! I am one of the developers of Herd and currently studying Computer Science at UB.",
+      "facts": [
+        "My favorite game is Hollow Knight.",
+        "I like collecting cans and drawing.",
+        "Lately, I've been binge-watching The Apothecary Diaries."
+      ]
+    },
+    "jack": {
+      "name": "Jack",
+      "intro": "My name is Jack Mazzella, I am a developer of Herd. I've been studying Computer Science for almost 6 years, and I will be graduating from UB in a few months.",
+      "facts": [
+        "My favorite animals are penguins.",
+        "My favorite TV show is The Wire.",
+        "My favorite song is Light My Fire.",
+        "My most favorite game is Fallout 4 although it is objectively bad.",
+        "I chose the engineer image because it's funny."
+      ]
+    },
+    "jill": {
+      "name": "Jill",
+      "intro": "Hey! this is Jill, I’m a computer science and robotics student at UB :).",
+      "facts": [
+        "I’m passionate about autonomous robots and ML/perception, although I also love designing.",
+        "Mom of two stinkies",
+        "Can solve a Rubik’s cube in 30 seconds",
+        "Born in Spain, raised in Colombia"
+      ]
+    }
+  }
+},
+"searchPage": {
+  "loading": "Loading...",
+  "title": {
+    "noQuery": "No search query provided",
+    "noResults": "No results found for '{{query}}'",
+    "showingResults": "Showing {{count}} results for '{{query}}'"
+  },
+  "buttons": {
+    "join": "+ Join",
+    "request": "+ Request",
+    "requested": "Requested"
+  },
+  "visibility": {
+    "private": "Private",
+    "public": "Public"
+  },
+  "errors": {
+    "joinFailed": "Failed to join community, check your internet connection and try again.",
+    "requestFailed": "Failed to request to join community, check your internet connection and try again.",
+    "cancelRequestFailed": "Failed to cancel request to join community, check your internet connection and try again.",
+    "searchFailed": "Failed to search communities, check your internet connection and try again.",
+    "joinedCommunitiesFailed": "Failed to retrieve joined communities, check your internet connection and try again.",
+    "profileFailed": "Failed to download profile, check your internet connection and try again."
+  }
+},
+"editCommunityForm": {
+  "success": "Community updated!",
+  "errors": {
+    "nameRequired": "Community name is required.",
+    "tagRequired": "Please select at least one tag.",
+    "nameTaken": "A community with this name already exists.",
+    "updateFailed": "Failed to update community.",
+    "bannerTooLarge": "Banner image is too large. Maximum size is 5 MB.",
+    "removeBannerFailed": "Failed to remove banner",
+    "uploadBannerFailed": "Failed to upload banner.",
+    "uploadSongFailed": "Failed to upload song."
+  },
+  "banner": {
+    "current": "Current banner:",
+    "remove": "Remove banner image",
+    "undo": "Undo remove",
+    "pending": "Banner image will be removed when you click Update Community.",
+    "preview": "Banner preview:",
+    "replace": "This will replace your current banner image.",
+    "upload": "Upload photo",
+    "change": "Change photo"
+  },
+  "fields": {
+    "communityName": "Community Name",
+    "visibility": "Visibility",
+    "tags": "Tags",
+    "selected": "selected",
+    "bannerColor": "Banner Color",
+    "bannerImage": "Banner Image (optional)",
+    "communitySong": "Community Song (optional)"
+  },
+  "visibility": {
+    "public": "Public",
+    "private": "Private"
+  },
+  "song": {
+    "current": "Current community song",
+    "remove": "Remove community song",
+    "undo": "Undo remove",
+    "pending": "Song will be removed when you click Update Community.",
+    "upload": "Upload Song",
+    "change": "Change Song",
+    "limit": "Max {{size}} MB per file. MP3 is usually much smaller than WAV; compress or re-encode if your file is over the limit."
+  },
+  "buttons": {
+    "cancel": "Cancel",
+    "update": "Update Community"
+  }
+},
+"editCommunityModal": {
+  "title": "Edit Community",
+  "loading": "Loading...",
+  "notFound": "Community not found.",
+  "noPermission": "You do not have permission to edit this community.",
+  "cancel": "Cancel",
+  "close": "Close edit community",
+  "loadFailed": "Failed to load community"
+},
+"manageModeratorsModal": {
+  "close": "Close manage moderators",
+  "searchPlaceholder": "Search users...",
+  "clearSearch": "Clear search",
+  "addModerator": "Add Moderator",
+  "removeModerator": "Remove Moderator"
+},
+"userSearchModal": {
+  "title": "Search Users",
+  "searchPlaceholder": "Search Usernames...",
+  "empty": {
+    "noQuery": "No search query provided",
+    "loading": "Loading...",
+    "noResults": "No results found"
+  },
+  "buttons": {
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "request": "Request",
+    "requested": "Requested"
+  },
+  "alerts": {
+    "searchFailed": "Failed to search for users. Check your internet connection and try again.",
+    "followFailed": "Failed to follow user. Check your internet connection.",
+    "unfollowFailed": "Failed to unfollow user. Check your internet connection.",
+    "requestFailed": "Failed to send follow request."
+  },
+  "alt": {
+    "close": "Close",
+    "profile": "Profile"
+  }
+},
+"profilePage": {
+  "loadingProfile": "Loading profile...",
+  "loading": "Loading...",
+  "dots": "...",
+  "private": {
+    "title": "This account is private",
+    "requestFollow": "Request to Follow",
+    "followRequested": "Follow Requested"
+  },
+  "notFound": {
+    "title": "404 Page Not Found",
+    "subtitle": "The page you are looking for could not be found.",
+    "goHome": "Go to Home"
+  },
+  "followingList": {
+    "title": "Following",
+    "empty": "This user isn't following anyone..."
+  },
+  "followersList": {
+  "title": "Followers",
+  "empty": "This user has no followers..."
+},
+  "counters": {
+    "followers": "Followers",
+    "following": "Following",
+    "posts": "Posts"
+  },
+  "buttons": {
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "following": "Following",
+    "block": "Block",
+    "unblock": "Unblock",
+    "copyProfileLink": "Copy profile link",
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  },
+  "messages": {
+    "linkCopied": "Link copied to clipboard",
+    "linkCopyFailed": "Could not copy link"
+  },
+  "constraints": {
+    "maxCharacters": "Max {{count}} characters"
+  },
+  "sections": {
+    "bio": "Bio",
+    "recentCommunities": "Recent Communities",
+    "interests": "Interests",
+    "recentPosts": "Recent Posts"
+  },
+  "empty": {
+    "noRecentCommunities": "No recent community activity...",
+    "noInterests": "No interests yet...",
+    "noRecentPosts": "No recent posts..."
+  },
+  "blocking": {
+    "youBlocking": "You're currently blocking @{{username}}.",
+    "blockedBy": "You're currently blocked by @{{username}}."
+  },
+  "profilePhotoModal": {
+  "title": "Change Profile Photo",
+  "previewPlaceholder": "Upload a photo to see a preview here...",
+  "message": "Set this as your new profile photo?",
+  "upload": "Upload Photo",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "close": "Close",
+  "save": "Save"
+},
+"backgroundPhotoModal": {
+  "title": "Change Banner",
+  "message": "Set this as your new banner?",
+  "previewPlaceholder": "Upload a photo to see a preview here...",
+  "upload": "Upload Photo",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "close": "Close",
+  "save": "Save"
+},
+"editBioModal": {
+  "title": "Edit Bio",
+  "placeholder": "Something cool about me...",
+  "cancel": "Cancel",
+  "save": "Save"
+},
+"status": {
+  "title": "Status",
+  "neutral": "Neutral",
+  "happy": "Happy",
+  "rofl": "ROFL",
+  "cool": "Cool",
+  "depressed": "Depressed",
+  "sleeping": "Sleeping",
+  "scared": "Scared",
+  "mad": "Mad",
+  "devious": "Devious",
+  "failedUpdate": "Failed to update status, check your internet connection and try again."
+}
+},
+"auth": {
+  "languageToggle": "ES",
+  "login": "Log In",
+  "signup": "Sign Up",
+  "forgotPassword": "Forgot Password",
+  "resetPassword": "Reset Password",
+  "email": "Email",
+  "password": "Password",
+  "username": "Username",
+  "displayName": "Display Name",
+  "confirmPassword": "Confirm Password",
+  "yourEmail": "Your Email",
+  "yourPassword": "Your Password",
+  "yourUsername": "Your Username",
+  "yourDisplayName": "Your Display Name",
+  "enterToken": "Enter token",
+  "forgotPasswordQuestion": "Forgot Password?",
+  "newToHerd": "New to Herd?",
+  "signUpLink": "Sign up",
+  "haveAccount": "Have an account?",
+  "loginLink": "Log in",
+  "returnTo": "< Return to",
+  "enterHerdEmail": "Enter the email you used for Herd",
+  "enterTokenLabel": "Please enter the token emailed to you:",
+  "tokenHelp": "If you didn't receive an email, please double check the email you entered and try again.",
+  "confirm": "Confirm",
+  "confirmYourPassword": "Confirm your password",
+  "bannerTaglineLine1": "Find communities for your interest",
+"bannerTaglineLine2": "Join the Herd!",
+"bannerTagline": "Find Communities for your interest\nJoin the Herd!",
+"passwordNoMatch": "Passwords do not match",
+"invalidToken": "Invalid or expired reset code",
+"resetFailed": "Reset password failed. Check your code and password and try again",
+  "errors": {
+    "provideEmail": "Please provide your email",
+    "providePassword": "Please provide your password",
+    "provideUsername": "Please provide a username",
+    "provideDisplayName": "Please provide a display name",
+    "provideToken": "Please provide a token",
+    "invalidEmail": "Invalid email",
+    "loginFailed": "Login failed, check your email and password and try again",
+    "emailMissingAt": "Email must include @",
+"emailMissingDot": "Email domain must include a dot, like .com",
+"passwordRequirements": "Password must be at least 10 characters and include one number, one special character, and one uppercase letter",
+"emailTaken": "Email already has an account associated with it",
+"usernameMin": "Username must be at least 3 characters",
+"displayNameMin": "Display name must be at least 3 characters",
+"displayNameMax": "Display name can be 10 characters at most",
+"signupFailed": "Sign up failed, try again",
+"passwordRules": "Password must be at least 10 characters and include one number, one special character, and one uppercase letter",
+"passwordNoMatch": "Passwords do not match",
+"invalidToken": "Invalid or expired reset code",
+"resetFailed": "Reset password failed. Check your code and password and try again",
+"signupFailedInputs": "Sign up failed, check your inputs and try again"
+  }
+}
+}
+

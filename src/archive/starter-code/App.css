@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap');
+
+/* For gods sake, please replace this with styles that are less horrifying than these */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #7c2667;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.deletePost{
+  width:100%;
+
+}
+.deleteIcon{
+  float:right;
+}
+
+.settings{
+  width:100%;
+}
+
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  outline:none;
+}
+
+.link-button:hover,
+.link-button:focus,
+.link-button:active {
+  text-decoration: none;
+  outline:none;
+}
+
+.submitbutton{
+  background-color: blue;
+  margin:10px;
+  border-radius: 5px;
+}
+
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+
+}
+
+.autocomplete input {
+    width: calc(300px + 1rem);
+}
+
+.autocomplete{
+    min-height: 165px;
+}
+
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+
+  display:inline-block;
+  position:relative;
+
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #008f68;
+  color: #fae042;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+.profileform label{
+   display:block;
+
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.postlist {
+  text-align: left;
+  background: blue;
+  border-radius: 20px;
+  padding:30px;
+  margin:10px;
+
+  width:60%;
+  display: inline-flex;
+}
+
+.userlist {
+  text-align: left;
+  background: blue;
+  border-radius: 20px;
+  padding:30px;
+  margin:10px;
+  width:60%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.comments{
+    background:white;
+    width:90%;
+    display:block;
+    border-radius: 20px;
+    padding:10px;
+    margin:10px;
+    color:black;
+}
+
+.commentlist {
+  text-align: left;
+  background: lightblue;
+  color:black;
+  border-radius: 20px;
+  padding:10px;
+  margin:10px;
+  font-size: 12px;
+  width:90%;
+  display:block;
+}
+
+.hide{
+  display:none;
+}
+
+.maincontent{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.posts{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.postbody{
+  max-width: 650px;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color:red;
+}
+
+.comment-block{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tag-active{
+  border:red;
+  border-width:thick;
+  border-style: solid;
+}
+
+.topnav{
+  /* need to specify some position other than static, so height can apply.
+     Fixed works since it will stay fixed to the side - 0 from both left and top. */
+  position:fixed;
+  left:0;
+  top:0;
+  height:80px;
+  width:100%;
+
+  /* internally to this container, we want to use flex positioning of the menu elements */
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #1D3557;
+}
+
+.app-name{
+  color:white;
+  font-family: 'Orbitron', 'Geometric Sans-Serif', sans-serif;
+  font-size: 50px;
+  gap: 20px;
+  padding:20px;
+}
+
+
+.nav-logo{
+  margin:10px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+
+/*icons spacing in such*/
+.nav-right {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;  /* space between icons */
+  margin: 10px;
+  padding: 0;
+}
+
+.topnav-icon{
+  width:40px;
+  height:40px;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+
+/* make profile image round */
+.profile-photo {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* remove button styling for logout */
+.logout-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* optional hover feel like your design */
+.topnav-icon:hover {
+  transform: scale(1.08);
+  transition: transform 0.15s ease;
+}
+
+
+.comment-indicator{
+  text-align:right;
+  width:100%;
+  display:block;
+  float:right;
+  margin-top: 10px;
+}
+
+.comment-icon{
+  width:40px;
+  height:40px;
+  float:right;
+}
+
+.comment-indicator-text{
+  background-color: lightblue;
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width:120px;
+  padding:5px;
+  float:right;
+  margin-left:10px;
+  text-align: center;
+}
+
+.hide{
+  display:none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 0; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 1px 10px 20px 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  height: 200px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  line-height: 42px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat__main {
+  flex: 0.6;
+}
+
+.message__container {
+  width: 100%;
+  height: 60vh;
+  background-color: purple;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.chat__footer {
+  padding: 20px;
+  background-color: black;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message {
+  width: 80%;
+  height: 100%;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 12px;
+}
+
+.messageIcon {
+  width:40px;
+  height:40px;
+  transition: transform 0.3s ease;
+}
+
+.messageIcon:hover {
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+
+.sendBtn {
+  width: 150px;
+  background-color: green;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: yellow;
+  cursor: pointer;
+}
+
+.message__recipient {
+  background-color: #000;
+  width: 300px;
+  padding: 8px;
+  font-size: 15px;
+  text-align: start;
+  color: #fff;
+  width: fit-content;
+}
+
+.message__sender {
+  background-color: blue;
+  max-width: 400px;
+  padding: 8px;
+  margin-left: auto;
+  font-size: 15px;
+  width: fit-content;
+}
+
+.message__sender {
+  text-align: right;
+}
+
+.recipient__name {
+  text-align: left;
+  color: #000;
+  font-size: 13px;
+}
+
+.sender__name {
+  font-size: 13px;
+  color: #000;
+  text-align: right;
+}

@@ -1,0 +1,259 @@
+/* ============================================================================================= */
+/* | AUTH MOBILE TOP BAR (login, register, forgot, reset — matches navbar, no icons) | */
+/* ============================================================================================= */
+
+.auth-mobile-top-bar {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .auth-mobile-top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #1d3557;
+        z-index: 1000;
+        box-sizing: border-box;
+        padding: 10px 16px;
+    }
+
+    .auth-mobile-top-bar__brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .auth-mobile-top-bar__logo {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+    }
+
+    .auth-mobile-top-bar__title {
+        color: #fff;
+        font-family: "Orbitron", "Geometric Sans-Serif", sans-serif;
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .auth-mobile-top-bar__title {
+        font-size: 48px;
+    }
+
+    .auth-mobile-top-bar__logo {
+        width: 58px;
+        height: 58px;
+    }
+}
+
+/* ============================================================================================= */
+/* | FORM FIELD | */
+/* ============== */
+
+    .form-field {
+        /* layout */
+        display: grid;
+        width: 60%;
+        margin: 10px;
+        gap: 5px;
+        
+        /* font */
+        font-size: 25px;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .form-field {
+            /* size */
+            width: 70%;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .form-field {
+            /* size */
+            width: 80%;
+        }
+    }
+
+/* ============================================================================================= */
+/* | FORM FIELD TITLE | */
+/* ==================== */
+        
+    .form-field-title {
+        /* size */
+        margin-left: 20px;
+        
+        /* color */
+        color: #7F7F7F;
+        
+        /* font */
+        font-size: 35px; 
+    }
+    
+    @media only screen and (max-width: 1550px) {        
+        .form-field-title {
+            /* font */
+            font-size: 27px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {    
+        .form-field-title {
+            /* font */
+            font-size: 20px;
+        }
+    }
+    
+    @media only screen and (max-width: 450px) {
+        .form-field-title {
+            /* size */
+            margin-left: 10px;
+            
+            /* font */
+            font-size: 20px;
+        }
+    }
+
+/* ============================================================================================= */
+/* | FORM FIELD TEXTBOX | */
+/* ====================== */
+
+    .form-field-textbox {
+        /* layout */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        /* size */
+        height: fit-content;
+        
+        /* border */
+        border-radius: 10px;
+        box-shadow: inset 0px 2px 3px #0005;
+        
+        /* color */
+        background: #E2E2E2;
+    }
+    
+    @media only screen and (max-width: 1550px) {            
+        .form-field-textbox {
+            /* border */
+            border-radius: 7px;   
+        }
+    }
+
+/* ============================================================================================= */
+/* | FORM FIELD INPUT | */
+/* ==================== */
+
+        .form-field-input {
+            /* size */
+            width: 100%;
+            height: 50px;
+            margin: 10px;
+            padding: 5px 0px 5px 11px;
+            
+            /* border */
+            border-radius: 10px;
+            
+            /* color */
+            color: #717171;
+            background: #0000;
+            
+            /* font */
+            font-size: 22px;
+        }
+        
+        .form-field-input::selection {
+            /* color */
+            background: #3584E4;
+            color: #FFF;
+        }
+        
+        .form-field-input::placeholder {
+            /* color */
+            color: #B5B5B5;
+        }
+        
+        
+        @media only screen and (max-width: 1550px) {            
+            .form-field-input {
+                /* size */
+                height: 38px;
+                padding: 7px 0px 7px 12px;
+                
+                /* border */
+                border-radius: 7px;
+            
+                /* font */
+                font-size: 18px;      
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {        
+            .form-field-input {
+                /* size */
+                padding: 4px 0px 4px 8px;
+            
+                /* font */
+                font-size: 15px;
+            }
+        }
+
+/* ============================================================================================= */
+/* | FORM FIELD MESSAGE | */
+/* ====================== */
+
+    .form-field-message {
+        /* layout */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+        /* size */
+        margin-left: 20px;
+        
+        /* color */
+        color: #F64E4E;
+        
+        /* font */
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 450px) {
+        .form-field-message {
+            /* size */
+            margin-left: 10px;
+        }
+    }
+    
+    .form-field-message-orange {
+        /* layout */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+        /* size */
+        margin-left: 20px;
+        
+        /* color */
+        color: #F7B17F;
+        
+        /* font */
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 450px) {
+        .form-field-message {
+            /* size */
+            margin-left: 10px;
+        }
+    }

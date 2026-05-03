@@ -1,0 +1,231 @@
+.profile-picture-manager {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    margin: 0px 20px 0px 20px;
+}
+
+.profile-picture-manager__label {
+    /* size */
+    margin-bottom: 10px;
+
+    /* color */
+    color: #717171;
+    
+    /* font */
+    font-size: 20px;
+}
+
+.profile-picture-manager__picture {
+    /* size */
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    
+    /* border */
+    border-radius: 50%;
+    
+} @media only screen and (max-width: 550px) {
+    .profile-picture-manager__picture {
+        /* size */
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.profile-picture-manager__upload-button {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    margin: 20px 0px 0px 0px;
+    padding: 8px 10px 8px 10px;
+    gap: 10px;
+    
+    /* border */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #0003;
+
+    /* color */
+    background: #F08A24;
+    color: #212121;
+    
+    /* font */
+    font-size: 16px;
+    
+    /* animation */
+    transition: transform 120ms ease;
+    
+} @media (hover: hover) {
+    .profile-picture-manager__upload-button:hover {
+        /* animation */
+        transform: translateY(-2px);
+    }
+}
+
+.profile-picture-manager__upload-icon {
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 18px;
+    height: 18px;
+}
+
+.profile-picture-modal {
+    /* position */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1100;
+    
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* size */
+    width: 100vw;
+    height: 100vh;
+    
+    /* color */
+    background: #0005;
+}
+
+.profile-picture-modal__menu {
+    /* position */
+    position: relative;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    /* size */
+    width: 400px;
+    max-height: 90vh;
+    padding: 30px 35px 30px 35px;
+    
+    /* border */
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px #0005;
+
+    /* color */
+    background: #E2E2E2;
+
+} @media only screen and (max-width: 550px) {
+    .profile-picture-modal__menu {
+        /* size */
+        max-width: calc(100% - 30px);
+    }
+}
+
+
+.profile-picture-modal__message {
+    /* layout */
+    text-align: center;
+
+    /* size */
+    margin: 15px 20px 35px 20px;
+    
+    /* color */
+    color: #717171;
+
+    /* font */
+    font-size: 22px;
+}
+
+.profile-picture-modal__upload {
+    /* layout */
+    flex-shrink: 0;
+    box-sizing: content-box;
+
+    /* size */
+    width: 200px;
+    height: 200px;
+    
+    /* border */
+    border-radius: 50%;
+}
+
+.profile-picture-modal__footer {
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    /* size */
+    width: 100%;
+    margin: 40px 15px 0px 15px;
+}
+
+.profile-picture-modal__confirm-button,
+.profile-picture-modal__cancel-button {
+    /* size */
+    min-width: 70px;
+    padding: 8px 10px 8px 10px;
+    
+    /* border */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px #0003;
+    
+    /* font */
+    font-size: 16px;
+    
+    /* animation */
+    transition: transform 120ms ease;
+
+} @media (hover: hover) {
+    .profile-picture-modal__confirm-button:hover,
+    .profile-picture-modal__cancel-button:hover {
+        /* animation */
+        transform: translateY(-2px);
+    }
+    
+} .profile-picture-modal__confirm-button {
+    /* color */
+    background: #FF8D00;
+    color: #212121;
+
+} .profile-picture-modal__cancel-button {
+    /* color */
+    background: #FFF;
+    color: #212121;
+}
+
+.profile-picture-modal__close-button {
+    /* position */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    /* layout */
+    box-sizing: content-box;
+
+    /* size */
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    
+    /* select */
+    cursor: pointer;
+    
+} @media (hover: hover) {
+    .profile-picture-modal__close-button:hover {
+        /* color */
+        filter: brightness(65%);
+    }
+}
+

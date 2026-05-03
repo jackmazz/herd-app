@@ -1,0 +1,126 @@
+.notifCard {
+    background: #e9e9e9;
+    border-radius: 14px;
+    padding: 18px 18px;
+    margin-bottom: 14px;
+    transition: box-shadow 0.2s ease, transform 0.08s ease;
+    display: grid;
+    grid-template-columns: 46px 1fr auto;
+    align-items: start;
+  }
+  
+  .notifCard:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+  }
+
+.notifCardTopRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+
+.notifCardBtns {
+    margin-left: 10px;
+}
+
+.notifCardAcceptBtn {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    margin: 3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border-radius: 999px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #f08a24;
+    color: #fff;
+    transition: background 0.15s ease, transform 0.1s ease;
+    align-self: center;
+}
+
+.notifCardAcceptBtn:hover {
+    background: #237b2d;
+    transform: translateY(-1px);
+}
+
+.notifCardDenyBtn {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    margin: 3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border-radius: 999px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: rgba(0,0,0,0.25);
+    color: #fff;
+    transition: background 0.15s ease, transform 0.1s ease;
+    align-self: center;
+}
+
+.notifCardDenyBtn:hover {
+    background: #c0392b;
+    transform: translateY(-1px);
+}
+
+.notifCardCancelAcceptBtn {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    margin: 3px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    border-radius: 999px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    background: #f08a24;
+    opacity: 0.5;
+    color: #fff;
+    transition: background 0.15s ease, transform 0.1s ease;
+    align-self: center;
+    cursor: not-allowed;
+}
+
+@media (max-width: 520px) {
+    .notifCard {
+      grid-template-columns: 48px 1fr auto;
+      padding: 14px 14px;
+    }
+    .postCardAvatar,
+    .postCardAvatarLink {
+      width: 48px;
+      height: 48px;
+    }
+    .postCardName { font-size: 20px; }
+    .postCardUsername,
+    .postCardCommunityTag,
+    .postCardContent { font-size: 16px; }
+}
+
+/* Make the body span all 3 grid columns */
+.notifCard .postCardBody {
+    grid-column: 1 / -1;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    min-width: 0;
+}
+
+.postCardTitle {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.postCardContent {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}

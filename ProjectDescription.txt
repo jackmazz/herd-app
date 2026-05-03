@@ -1,0 +1,117 @@
+CSE 370 - Group 10 - Team Contract 
+
+Team Name: The GOAT Kids
+
+Github Repo: https://github.com/CSE370HCI/goat/
+
+Members:                            Github Usernames:
+    Brigid Walker                       brigidwalker
+    Helen Zhu                           helenzhu20
+    Cameron Carlson                     cjc48
+    Jack Mazzella                       jackmazz-ub
+    Jillian Manjarrez Guerrero          i-am-jillian
+
+Dispute Resolution Approach
+    In case we cannot agree on our decision, we will use a 
+    coin as a fast decision maker where the head of the coin 
+    will be an option and the tail of the coin will be the other 
+    option. We throw a coin and the side of the coin facing up 
+    will be the final decision. We think this is a fast, silly 
+    and simple idea for decision making.
+
+Project Mission
+    RateRoom's mission is to create a social media app where users can
+    share their individual opinions on various topics. Users will use
+    a rating system to express what they like/dislike the most. Then,
+    users can discuss their ratings with others in a safe environment.
+
+Project Vision
+    Our project will be titled RateRoom. It will be a social media 
+    site where users can share their opinions on various topics. 
+    Specifically, users are prompted to rate a set of options to share 
+    with others, in which commenters can agree or disagree with the 
+    poster’s opinions via a like/dislike system, or the comment section. 
+    Users will organize their opinions by rating each option 1-5 stars, 
+    and supplying a caption which explains their decisions.
+
+    We want to group users with similar interests using a room system, in 
+    which the room creator will specify the topic and the options to be rated. 
+    Each user will post their individual star ratings, and the average 
+    ratings will be summarized at the top of the page.
+
+    Here are some of the features needed to make this site successful:
+        1) Account Registration & Login Page
+        2) Profile Page to view & edit account information
+        3) Friends Page to add or remove friends
+        4) Page to create a room & specify the options
+        5) Page to view a room’s average ranking, individual rankings & comments
+        6) Page to create a ranking for a specific room
+        7) Search feature to look for a certain room
+
+A Typical User
+    This app is designed for users who enjoy opinion-driven social interaction, 
+    sharing opinions, humor and community acceptance through shared experiences 
+    with interactive ratings. The demographics of a target user will be of a 
+    16-30 y/o person, all genders, urban and suburban areas, primarily U.S with 
+    global escalation. High school to college students, early-career professionals. 
+    Users that have a daily usage of platforms like Instagram, TikTok, Reddit, 
+    Twitter and Discord, since these users already vote in polls, like/comment posts, 
+    share content and engage with memes and humor.
+
+    Use Case User:
+        1) High school/ college students:
+            - Ages 16-24
+            - Uses app late at night / downtime
+            - Creates funny rooms
+            - Rates based on personal experiences
+            - Comments with exaggerated stories
+            - Shares rooms or posts with friends
+            
+        2) Young professionals:
+            - Ages 25-30
+            - Uses app during breaks
+            - Less posting, more voting
+            - Engages with trending rooms
+            - Enjoys of crowd consensus
+        
+        3) Content Driven User
+            - Creates rooms consistently
+            - Wants likes/comments
+            - Want visibility and influence inside small communities
+
+Similar Applications
+    Similar applications include Letterboxd and Reddit. Letterboxd is a movie rating 
+    app where you can log any movie and rate it out of 5 stars and provide your own 
+    comment or analysis. I enjoy this application a lot actually, however it is only 
+    contained to movies. We want to keep this feature of ratings and being able to see 
+    other users' inputs. We will also change the typical format by having the original 
+    creator of each “room” choose the items they and the other users will be rating. 
+    For example, op creates a post about best late night snacks, using four examples 
+    of their choice (ex. Goldfish, pickles) then posts. Other people can now join in 
+    and also rate those items, each “room” will have the average of what everyone has 
+    rated the options, which differs from Letterboxd. The star rating system is mainly 
+    what we are modeling in some way. 
+
+    However, Letterboxd’s mobile app’s UI leaves some to be desired. It is a bit hard to 
+    navigate especially for early users because there seems to be multiple screens that 
+    essentially show the same thing but in slightly different format. There are many features, 
+    like seeing your own review history, popular movies, friends activities which are some 
+    features we would also like to include but we hope to make the flow more concise and 
+    consistent no matter where you are on the app. 
+
+    Another similar application as mentioned before is Reddit. The main feature to compare 
+    is the idea of having joinable communities with people with similar interests. Reddit 
+    has sub-Reddits, which users can join and have discussions about that topic. Our groups 
+    are going to be similar because the reason behind the groups is still to have communities, 
+    but be different because the function behind the groups is more specific, it is to share 
+    opinions through rankings rather than just general discussion. Someone will initially be 
+    able to make the community with the items they want to rank and upload it, along with a 
+    (short) description. Then people could essentially reply with a ranking of their own, and 
+    comment on other people's rankings. 
+
+    One thing about Reddit is that it can seem overwhelming, at least for early users, to 
+    understand the flow of the app and to find the sub-reddits they want to join. We want to 
+    make ours more accessible and also provide some beginner “rooms” users might want to join.
+    When you join said community you will be able to choose what you want to rate. We also want 
+    our users to be able to create the initial post, essentially making their own room.  
+

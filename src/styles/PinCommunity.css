@@ -1,0 +1,169 @@
+.pin, .pinned, .pinFilled, .pinUnfilled, .unpinned {
+    position: absolute;
+    margin: 7px;
+    /* float: right; */
+}
+
+.pin {
+    background-color: #F08A24;
+    height: 30px;
+    width: 30px;
+    padding: 6px;
+    border-radius: 35%;
+}
+
+.pinFilled, .pinUnfilled {
+  background-color: #F08A24;
+  height: 30px;
+  width: 30px;
+  padding: 4.5px;
+  border-radius: 35%;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #F08A24;
+}
+
+.pinUnfilled {
+  background-color: #D9D9D9;
+  border-color: #D9D9D9;
+}
+
+.pinUnfilled:hover, .pinFilled:hover {
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #F06400;
+}
+
+.pinFilled:hover {
+  background-color: #F06400;
+}
+
+.pinned, .unpinned {
+    background-color: #F08A24;
+    color: black;
+    height: 18px;
+    padding: 0px 8px;
+    border-radius: 20%/50%;
+    font-size: 12px;
+    border-color: #F06400;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.unpinned {
+  background-color: #D9D9D9;
+}
+
+.pin:hover, .pinned:hover, .pinUnfilled:hover, .pinFilled:hover, .unpinned:hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* box-shadow: 0 2px 6px rgba(0,0,0,0.3); */
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8);
+}
+
+.pinned:hover {
+  background-color: #F06400;
+}
+
+.unpinned:hover {
+  background-color: white;
+}
+
+.pinMenuBtn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+    color: #666;
+    padding: 6px 8px;
+    border-radius: 10px;
+    
+} .pinMenuBtn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.pinMenuPanel {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 40px;
+  right: 5px;
+  left: auto;
+  transform: none;
+  /* min-width: 80px;
+  max-width: min(100px, calc(50vw - 12px)); */
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+  padding: 2px 6px;
+  z-index: 250;
+}
+
+.pinMenuOption {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  
+} .pinMenuOption:hover {
+  background: #eee;
+}
+
+.unfilledStar, .filledStar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  margin: 10px;
+  color: #F06400;
+}
+
+.unfilledStar:hover, .filledStar:hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.3); */
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8);
+}
+
+.unfilledStar {
+  color: #F06400;
+}
+
+.filledStar {
+  color: #F06400;
+}
+
+.makeUnfilledStar, .makeFilledStar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  width: 25px;
+  aspect-ratio: 1;
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
+}
+
+.makeUnfilledStar {
+  background: white;
+}
+
+.makeFilledStar {
+  background: #F06400;
+}
+
+.makeUnfilledStar:hover, .makeFilledStar:hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.3); */
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8);
+}

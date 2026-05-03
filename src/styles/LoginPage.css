@@ -1,0 +1,491 @@
+/* ============================================================================================= */
+/* | LOGIN PAGE | */
+/* ============== */
+
+    #login-page {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+
+    min-height: 100dvh;
+    background: #f5f5f5;
+}
+    
+    @media only screen and (max-width: 1000px) {
+        #login-page {
+            /* layout */
+            grid-template-columns: 1fr;  
+            /* fixed auth mobile top bar */
+            padding-top: 80px;
+            box-sizing: border-box;
+        }
+    }
+
+/* ============================================================================================= */
+/* | BANNER | */
+/* ========== */
+
+    #banner {
+        /* layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        /* size */
+        gap: 20px;
+        
+        /* color */
+        background: #1D3557;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        #banner {
+            /* layout */
+            display: none;
+        }
+    }
+
+/* ============================================================================================= */
+/* | BANNER TITLE | */
+/* ================ */
+
+    #banner-title {
+        /* color */
+        color: #FFF;
+        
+        /* font */
+        font-family: "Orbitron" !important;
+        font-size: 85px;
+    } 
+    
+    @media only screen and (max-width: 1550px) {
+        #banner-title {
+            /* font */
+            font-size: 65px;
+        }
+    }
+    
+    @media only screen and (max-width: 1145px) {
+        #banner-title {
+            /* font */
+            font-size: 55px;
+        }
+    }
+
+/* ============================================================================================= */
+/* | BANNER LOGO | */
+/* =============== */
+
+    #banner-logo {
+        /* size */
+        width: 85%;
+        height: auto;
+        
+        /* border */
+        border-radius: 50%;
+        box-shadow: 0px 5px 10px #0005;
+    }
+
+/* ============================================================================================= */
+/* | LOGIN FORM | */
+/* ============== */
+
+    #login-form {
+        /* layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        /* size */
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 20px;
+        
+        /* border */
+        box-shadow: inset 5px 5px 10px #0005;
+        
+        /* color */
+        background: #FFF;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        #login-form {
+            /* size */
+            gap: 15px;
+        }
+    }
+
+/* ============================================================================================= */
+/* | LOGIN FORM TITLE | */
+/* ==================== */
+
+    #login-form-title {
+        /* size */
+        margin-bottom: 30px;
+        text-align: center;
+        
+        /* font */
+        font-family: "Orbitron" !important;
+        font-size: 55px;
+    }
+    
+    @media only screen and (max-width: 1550px) {
+        #login-form-title {
+            /* size */
+            font-size: 55px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        #login-form-title {
+            /* size */
+            margin-bottom: 0px;
+            
+            /* font */
+            font-size: 35px;
+        }
+    }
+
+/* ============================================================================================= */
+/* | LOGIN SUBMIT | */
+/* ================ */
+
+    #login-submit {
+        /* layout */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        /* size */
+        width: 100%;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    
+    @media only screen and (max-width: 1550px) {
+        #login-submit {
+            /* size */
+            margin-top: 15px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {    
+        #login-button {
+            /* size */
+            margin-top: 0px;
+        }
+    }
+
+/* ============================================================================================= */
+/* | LOGIN BUTTON | */
+/* ================ */
+
+    #login-button {
+        /* size */
+        width: 40%;
+        padding: 20px 10px 20px 10px;
+        
+        /* border */
+        border-radius: 20px;
+        box-shadow: 0px 2px 5px #0007;
+        
+        /* color */
+        background: #FF8D00;
+        color: #FFF;
+        
+        /* font */
+        font-size: 35px;
+    }
+    
+    @media (hover: hover) {
+        #login-button:hover {
+            /* color */
+            background: #F27400;
+        }
+    }
+    
+    #login-button:active {
+        /* border */
+        box-shadow: inset 0px 0px 7px #0005;
+    }
+    
+    @media only screen and (max-width: 1550px) {
+        #login-button {
+            /* size */
+            width: 35%;
+            padding: 15px 9px 15px 9px;
+            
+            /* font */   
+            font-size: 27px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {    
+        #login-button {
+            /* size */
+            padding: 8px 5px 8px 5px;
+            
+            /* border */
+            border-radius: 12px;
+            
+            /* font */   
+            font-size: 20px;
+        }
+    }
+
+/* ============================================================================================= */
+/* | SUBMIT MESSAGE | */
+/* ================== */
+
+    #submit-message {
+        /* layout */
+        text-align: center;
+        
+        /* size */
+        width: 80%;
+    
+        /* color */
+        color: #F64E4E;
+        
+        /* font */
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    @media only screen and (max-width: 600px) {    
+        #submit-message {
+            font-size: 12px;
+        }
+    }
+    
+/* ============================================================================================= */
+/* | PASSWORD VIEW/HIDE BUTTON | */
+/* ============================= */
+
+    #password-hide-button, 
+    #password-view-button {
+        /* size */
+        width: 35px;
+        height: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+        
+        /* selection */
+        cursor: pointer;
+    }
+    
+    @media only screen and (max-width: 1550px) {    
+        #password-hide-button, 
+        #password-view-button {
+            /* size */
+            width: 27px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        #password-hide-button, 
+        #password-view-button {
+            /* size */
+            width: 22px;
+        }
+    }
+
+/* ============================================================================================= */
+/* | RESET PASSWORD LINK | */
+/* ======================= */
+
+    #reset-password-link {
+        /* size */
+        margin-top: 7px;
+        margin-left: 20px;
+        
+        /* color */
+        color: #F7B17F;
+        
+         /* font */
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    @media (hover: hover) {
+        #reset-password-link:hover {
+            /* color */
+            color: #FF8D00;
+        }
+    }
+    
+    @media only screen and (max-width: 1550px) {
+        #reset-password-link {
+            /* size */
+            margin-top: 5px;
+            
+            /* font */
+            font-size: 15px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {    
+        #reset-password-link {
+            /* size */
+            margin-top: 3px;
+            
+            /* font */
+            font-size: 14px;
+        }
+    }
+    
+    @media only screen and (max-width: 450px) {    
+        #reset-password-link {
+            /* size */
+            margin-left: 10px;
+            
+            /* font */
+            font-size: 14px;
+        }
+    }
+    
+/* ============================================================================================= */
+/* | SIGNUP PROMPT | */
+/* ================= */
+
+    #signup-prompt {
+        /* color */
+        color: #7F7F7F;
+        
+        /* font */
+        font-size: 25px;
+    }
+    
+    @media only screen and (max-width: 600px) {        
+        #signup-prompt {
+            /* size */
+            margin-top: 40px;
+            
+            /* font */
+            font-size: 17px;
+        }
+    }
+
+/* ============================================================================================= */
+/* | SIGNUP PROMPT LINK | */
+/* ====================== */
+
+    #signup-link {
+        /* color */
+        color: #F7B17F;
+        
+        /* font */
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    @media (hover: hover) {
+        #signup-link:hover {
+            /* color */
+            color: #FF8D00;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        #signup-link {
+            /* font */
+            font-size: 17px;   
+        }
+    }
+    
+.required-star {
+    color: red;
+    margin-right: 5px;
+}
+
+#banner-tagline {
+    color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 30px;
+    font-family: "Oxanium";
+    font-weight: 600;
+}
+
+
+.auth-language-toggle {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    z-index: 9999;
+
+    min-width: 62px;
+    height: 38px;
+    padding: 0 16px;
+
+    border: 2px solid #f28c28;
+    border-radius: 999px;
+
+    background: #ffffff;
+    color: #f28c28;
+
+    font-family: "Oxanium", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* keep white always */
+.auth-language-toggle:hover,
+.auth-language-toggle:active,
+.auth-language-toggle:focus,
+.auth-language-toggle:focus-visible {
+    background: #ffffff;
+    color: #f28c28;
+    border-color: #f28c28;
+    outline: none;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .auth-language-toggle {
+        top: 95px;
+        right: 14px;
+        z-index: 1;
+    }
+
+    .auth-mobile-top-bar {
+        z-index: 9999;
+    }
+}
+
+.auth-language-toggle:hover,
+.auth-language-toggle:active,
+.auth-language-toggle:focus,
+.auth-language-toggle:focus-visible {
+    background: #ffffff;
+    color: #f28c28;
+    border-color: #f28c28;
+    box-shadow: none;
+    outline: none;
+}
+/* iPhone SE only */
+@media only screen 
+and (max-width: 380px)
+and (max-height: 700px) {
+
+    #login-form-title {
+        margin-top: 22px;
+    }
+    #signup-prompt {
+        margin-top: 18px;
+    }
+}

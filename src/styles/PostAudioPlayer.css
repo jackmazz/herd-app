@@ -1,0 +1,107 @@
+.postCardAudio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  margin: 16px 0 8px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.postCardAudio__playBtn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #f08a24;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.08s ease;
+}
+
+.postCardAudio__playBtn:hover {
+  background: #db6c12;
+}
+
+.postCardAudio__playBtn:active {
+  transform: scale(0.96);
+}
+
+.postCardAudio__time {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  color: #333;
+  min-width: 2.5em;
+}
+
+.postCardAudio__time--elapsed {
+  text-align: right;
+}
+
+.postCardAudio__time--total {
+  text-align: left;
+}
+
+.postCardAudio__track, .disabledPostCardAudio__track {
+  flex: 1;
+  min-width: 0;
+  height: 8px;
+  border-radius: 4px;
+  background: #ccc;
+  cursor: pointer;
+  position: relative;
+}
+.disabledPostCardAudio__track {
+  cursor: not-allowed;
+}
+
+.postCardAudio__progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background: #f08a24;
+  pointer-events: none;
+}
+
+.postCardAudio--compact {
+  margin: 0;
+  padding: 7px 9px;
+  gap: 7px;
+}
+
+.postCardAudio--compact .postCardAudio__playBtn {
+  width: 30px;
+  height: 30px;
+}
+
+.postCardAudio--compact .postCardAudio__playBtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.postCardAudio--compact .postCardAudio__time {
+  font-size: 11px;
+}
+
+.postCardAudio--compact .postCardAudio__track, .postCardAudio--compact .disabledPostCardAudio__track {
+  height: 6px;
+}
+
+.postCardAudio__playBtn:disabled {
+  cursor: not-allowed;
+}
+.postCardAudio__playBtn:disabled:active {
+  transform: none;
+}

@@ -1,0 +1,60 @@
+.editCommunityMenu {
+  position: relative;
+  /* margin-top: 10px; */
+}
+
+.editCommunityTriggerBtn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  background: #f08a24;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.editCommunityTriggerBtn:hover {
+  background: #db6c12;
+  transform: translateY(-2px);
+}
+
+.editCommunityMenuPanel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 190px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 250;
+}
+
+.editCommunityMenuOption {
+  width: 90%;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  text-align: left;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.editCommunityMenuOption:hover {
+  background: #eee;
+}
+
+.editCommunityMenuOption--danger {
+  color: #F64E4E;
+}
+
+.editCommunityMenuOption--danger:hover {
+  background: #fdecec;
+}
